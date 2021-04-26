@@ -47,8 +47,8 @@ def detect(gray, frame):
        roi_color = roi_color.astype("float") / 255.0
        roi_gray = img_to_array(roi_color)
        roi_color = np.expand_dims(roi_color, axis=0)
-       OM = model.predict(roi_color)
-       label = "Other" if 0.5 > OM else "OM"
+       pred = model.predict(roi_color)
+       label = "PSG" if pred > 0.5 else "OM"
        
        cv2.putText(frame, label, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2)
    return frame
