@@ -25,4 +25,4 @@ In France, it couldn’t be different, the rivalry is present in the hexagon. Th
 
 The PSG, on the other hand, is the richest French team. The club wants to enter the hall of great teams of Europe. Always presenting good performances at international level, the PSG did never reach your main goal, become a European champion. Every year, the PSG is faced to the international failure (in the current season 20/21, it can to change). Regardless of your constant European failure, the club of the capital dominates the football at national level. The PSG became the second most popular French club, due to a considerable number of star players, a strong advertising campaign, and evidently, a good football.
 
-Motivated by this French rivalry, OM x PSG, I want to bring it to the world of computer vision. Several applications.
+Motivated by this French rivalry, OM x PSG, I want to bring it to the world of computer vision. The object recognition became...
