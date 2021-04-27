@@ -4,7 +4,7 @@
 
 This project intends to build three different approaches for object recognition. The objects to be recognized are football jerseys (t-shirts) of the two most popular French teams, the Olympique de Marseille and the Paris Saint-Germain.
 
-The approaches that will be considered in this project are: Viola Jones algorithm and CNN (Convolutional Neural Network), SSD (Single Short Object Detection) and YOLO (You Only Look Once). Each of them can be founded in the follows folders.
+The approaches that will be considered in this project are: Viola Jones algorithm and CNN (Convolutional Neural Network), SSD (Single Short Object Detection) and YOLO (You Only Look Once). Each of them can be found in the follows folders.
 
 - [OM x PSG T-Shirt Recognition with Viola-Jones algorithm and CNN.](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Recognition/tree/main/OMxPSG_T-Shirt_Recognition_with_ViolaJones_and_CNN.)
 - OM x PSG T-Shirt Recognition with SSD (to be built).
