@@ -1,13 +1,8 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Apr 15 15:38:52 2021
+# =============================================================================
+# Script to automate the training process of a Haar Cascade.
+# =============================================================================
 
-@author: igor
-"""
-
-
-####### Importing Libraries ######
+###### Importing Libraries ######
 from getopt import getopt
 from sys import argv
 from os import listdir, path, makedirs, remove
@@ -17,28 +12,48 @@ from time import sleep
 from shutil import rmtree, copytree, copy
 import cv2 as cv
 
-######## Defining the directories for the original images ########
 
-POS_IMG = "dataset/orig-pos"
-NEG_IMG = "dataset/orig-neg"
+# =============================================================================
+# Defining the main directory and the directories for the original images.
+# This is a safe way to conserve your original data.
+# Positive images contain the object to be recognized.
+# Negative images contain the images background.
+# =============================================================================
 
-######## Defining the directories for the training sets ########
+MAIN_DATA_DIR = path.abspath("dataset")
+ORG_POS = "dataset/orig-pos"
+ORG_NEG = "dataset/orig-neg"
 
-DIR_PROCESSING_DATA = "dataset"
-DIR_POS_IMAGES = "dataset/pos"
-DIR_POS_IMAGES_CROPPED = DIR_PROCESSING_DATA+"/positive-clean-cropped"
-DIR_DATA = "dataset"
-DIR_NEG_IMAGES = "dataset/neg"
-DIR_SAMPLE_IMAGES = DIR_DATA+"/positive-clean-cropped-samples"
-DIR_HAAR_DATA = DIR_DATA+"/clean-cropped-haardata"
+"""
+    ### Import to know ###
+    
+    To avoid any kind of problem with the training process, it's recommended
+    to use the absolute path to all directories and files.
+    
+"""
+# =============================================================================
+# Defining the directories for the training sets.
+# =============================================================================
 
-FILE_NEG_COLLECTION = DIR_NEG_IMAGES+"/"+DIR_NEG_IMAGES.split("/")[-1]+".txt"
-FILE_SAMPLE_COLLECTION = DIR_SAMPLE_IMAGES+"/"+DIR_SAMPLE_IMAGES.split("/")[-1]+".txt"
-FILE_SAMPLE_VEC = DIR_SAMPLE_IMAGES+".vec"
+TR_POS_IMAGES = path.abspath("dataset/pos") # Training positive images
+TR_NEG_IMAGES = path.abspath("dataset/neg") # Training negative images
+SAMPLE_IMAGES = MAIN_DATA_DIR +"/positive-samples" # Folder to the samples images cropped and annotated
+DIR_HAAR_DATA = MAIN_DATA_DIR + "/haar-cascade-data" # Folder to store the Haar cascade and its training stages and parameters
 
-####### Starting the script for the full training process ########
+# =============================================================================
+# Defining some important files as background, sample and vector.
+# =============================================================================
 
-if __name__=="__main__":
+NEG_COLLECTION = TR_NEG_IMAGES + "/" + TR_NEG_IMAGES.split("/")[-1]+".txt" # Negative images list
+SAMPLE_COLLECTION = SAMPLE_IMAGES+ "/" + SAMPLE_IMAGES.split("/")[-1]+".txt" # Annotation file for the positive images with their background.
+SAMPLE_VEC = SAMPLE_IMAGES + ".vec" # File for vectorized images
+
+
+# =============================================================================
+# Starting the script for the full training process 
+# =============================================================================
+
+if __name__ == "__main__":
     (createSamples, createVec, trainCascade) = (False, False, False)
     opts, args = getopt(argv[1:],"svt",["createSamples","createVec","trainCascade"])
     for opt, arg in opts:
@@ -49,56 +64,60 @@ if __name__=="__main__":
         elif(opt in ("--trainCascade","-t")):
             trainCascade = True
     
-    ######### Resizing images and changing image colors #########
+    # =============================================================================
+    # Images preprocessing
+    #  - Copy to the train directory
+    #  - Changing the color scale
+    #  - Resizing 
+    # =============================================================================
     
-    ##### Negatives Images ######
+    ##### Defining function to process all negative images ######
+    
     def resizeNegImages():
         
-        imagePath = listdir(NEG_IMG)
-        identify = 1
-        if not path.isdir(DIR_NEG_IMAGES):
-            makedirs(DIR_NEG_IMAGES)
+        imagePath = listdir(ORG_NEG) # list of images from the directory orig-neg
+        identify = 1 # counter for each image
+        
+        if not path.isdir(TR_NEG_IMAGES):
+            makedirs(TR_NEG_IMAGES) # To create the directory with the negative images for the training process
+        
         for i in imagePath:
+            i.replace(i, TR_NEG_IMAGES + "/" + str(identify) + ".JPEG") # To replace the image from the directory orig-neg into the repository neg
+            copy(ORG_NEG + "/" + i, i.replace(i, TR_NEG_IMAGES + "/" + str(identify) + ".JPEG")) # To copy the image in the repository neg
+            img = cv.imread(TR_NEG_IMAGES + "/" + str(identify) + ".JPEG", cv.IMREAD_GRAYSCALE) # To change the color scale into gray scale
+            resize = cv.resize(img, (100, 100)) # To resize the image
+            cv.imwrite(TR_NEG_IMAGES + "/" + str(identify) + ".JPEG", resize) # To write the processed image
+            identify += 1 # to increase the counter that labeling each image
             
-            i.replace(i, DIR_NEG_IMAGES + "/" + str(identify) + ".JPEG")
-            copy(NEG_IMG + "/" + i, i.replace(i, DIR_NEG_IMAGES + "/" + str(identify) + ".JPEG"))
-            img = cv.imread(DIR_NEG_IMAGES + "/" + str(identify) + ".JPEG", cv.IMREAD_GRAYSCALE)
-            resize = cv.resize(img, (100, 100))
-            cv.imwrite(DIR_NEG_IMAGES + "/" + str(identify) + ".JPEG", resize)
-            
-            identify += 1
-        return identify
-    nun_neg = resizeNegImages()
+    resizeNegImages() # applying the function
     
-    ##### Positive Images #####
+   ##### Defining function to process all positive images ######
+    
     def resizePosImages():
-        
-        imagePath = listdir(POS_IMG)
+        imagePath = listdir(ORG_POS)
         identify = 1
-        
-        if not path.isdir(DIR_POS_IMAGES):
-            makedirs(DIR_POS_IMAGES)
+        if not path.isdir(TR_POS_IMAGES):
+            makedirs(TR_POS_IMAGES)
+            
         for i in imagePath:
-            
-            i.replace(i, DIR_POS_IMAGES + "/" + str(identify) + ".JPEG")
-            copy(POS_IMG + "/" + i, i.replace(i, DIR_POS_IMAGES + "/" + str(identify) + ".JPEG"))
-            img = cv.imread(DIR_POS_IMAGES + "/" + str(identify) + ".JPEG", cv.IMREAD_GRAYSCALE)
+            i.replace(i, TR_POS_IMAGES + "/" + str(identify) + ".JPEG")
+            copy(ORG_POS + "/" + i, i.replace(i, TR_POS_IMAGES + "/" + str(identify) + ".JPEG"))
+            img = cv.imread(TR_POS_IMAGES + "/" + str(identify) + ".JPEG", cv.IMREAD_GRAYSCALE)
             resize = cv.resize(img, (100, 100))
-            cv.imwrite(DIR_POS_IMAGES + "/" + str(identify) + ".JPEG", resize)
-            
+            cv.imwrite(TR_POS_IMAGES + "/" + str(identify) + ".JPEG", resize)
             identify += 1
-        return identify
-    nun_pos = resizePosImages()
+            
+    resizePosImages()
    
     ##### To be sure that we have the output directory #####
-    if(not path.isdir(DIR_SAMPLE_IMAGES)):
+    if(not path.isdir(SAMPLE_IMAGES)):
         makedirs(DIR_SAMPLE_IMAGES)
     
     ##### Creating the background file ######
-    negImageCollectionFile = open("neg.txt", "w")
-    negImageFilenames = [f for f in listdir(DIR_NEG_IMAGES) if path.isfile(path.join(DIR_NEG_IMAGES,f)) and f.endswith("JPEG")]
+    negImageCollectionFile = open(NEG_COLLECTION , "w")
+    negImageFilenames = [f for f in listdir(TR_NEG_IMAGES) if path.isfile(path.join(TR_NEG_IMAGES,f)) and f.endswith("JPEG")]
     for f in negImageFilenames:
-        negImageCollectionFile.write("/home/igor/Documents/Artificial Inteligence/Deep-Learning/Artificial Intelligence Formation/4 - Computer Vision/Haar Cascade/dataset/neg/" + f)
+        negImageCollectionFile.write(TR_NEG_IMAGES + "/" + f)
         negImageCollectionFile.write("\n")
     negImageCollectionFile.close()
     
@@ -115,7 +134,7 @@ if __name__=="__main__":
                 "-img", path.join(DIR_POS_IMAGES,f),
                 "-bg", 'neg.txt',
                 "-info", path.join(DIR_SAMPLE_IMAGES, file),
-                "-num", str(round(1600*0.8)),
+                "-num", str(round(250*0.8)),
                 "-maxxangle", "0.0",
                 "-maxyangle", "0.0",
                 "-maxzangle", "0.3",
@@ -152,9 +171,8 @@ if __name__=="__main__":
             "-vec", FILE_SAMPLE_VEC,
             "-bg", "neg.txt",
             "-numPos", str(max(50, sum(1 for line in open(DIR_SAMPLE_IMAGES + "/sample.lst", "r")))/2),
-            #"-numPos", str(50),
             "-numNeg", str(max(50, sum(1 for line in open(DIR_SAMPLE_IMAGES + "/sample.lst", "r")))/4),
-            "-numStages", "20",
+            "-numStages", "10",
             "-precalcValBufSize", "1024",
             "-precalcIdxBufSize", "1024",
             "-featureType", "HAAR",
