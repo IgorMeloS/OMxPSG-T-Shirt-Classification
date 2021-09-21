@@ -1,4 +1,4 @@
-# OM x PSG T-Shirt Recognition
+# OM x PSG T-Shirt Detection
 
 ## Overview
 
