@@ -1,8 +1,13 @@
-# OM x PSG T-Shirt Detection
+# OM x PSG T-Shirt Recognition
 
 ## Overview
 
-This project intends to build three different approaches for object recognition. The objects to be recognized are football jerseys (t-shirts) of the two most popular French teams, the Olympique de Marseille and the Paris Saint-Germain.
+This project intends to build three different approaches for object detection. The objects to be detected are football jerseys (t-shirts) of the two most popular French teams, the Olympique de Marseille and the Paris Saint-Germain.
+
+
+**About the project**: The idea behind this project started with my training on Computer Vision (CV). In the beginning of my Artificial Intelligence journey, I wanted deploy a model of Convolutional Neural Network to predict images from the both French teams. But, in this moment, I didn't have enough knowledge about CV. I’ve postulated for a job, to work with CV and, I presented this idea as personal project. The experience was a little bite different I had imagined. When I was asked about image pre-processing, about labelization and especially if, my model was capable to detect object with video stream, I didn’t have the responses.
+
+After this experience, I was demotivated (I imagined that the classification model was enough), but decided to do a deep formation on CV and fill the empty blanks. During this process, I've studied many aspects about image preprocessing, CNN architectures (for classification and detection tasks) and OpenCV skills. The results presented here is the reward of part of my studies.
 
 The approaches that will be considered in this project are: Viola Jones algorithm and CNN (Convolutional Neural Network), SSD (Single Short Object Detection) and YOLO (You Only Look Once). Each of them can be found in the follows folders.
 
@@ -22,13 +27,8 @@ The rivalry is another interesting feature of the soccer. In the football world,
 
 In France, it couldn’t be different, the rivalry is present in the hexagon. The well-known “Le classique” has place every year, figured by the two most popular French teams, the Olympique de Marseille (OM) and the Paris Saint-Germain (PSG). The Olympique de Marseille is the most popular team in France, in your list of titles contains a Champions League, the most important competition for the football clubs. In your long existence, the club of the south spread across France due to your glorious history, the gold star above your logo has an important weight for the club. Despite your popularity, OM nowadays does not have a competitive team, but your supporters is the power of the club.
 
+The PSG, on the other hand, is the richest French team. The club wants to enter the hall of great teams of Europe. Always presenting good performances at international level, the PSG did never reach your main goal, become a European champion. Every year, the PSG is faced to the international failure. Regardless of your constant European failure, the club of the capital dominates the football at national level. The PSG became the second most popular French club, due to a considerable number of star players, a strong advertising campaign, and evidently, a good football.
 
-The PSG, on the other hand, is the richest French team. The club wants to enter the hall of great teams of Europe. Always presenting good performances at international level, the PSG did never reach your main goal, become a European champion. Every year, the PSG is faced to the international failure (in the current season 20/21, it can to change). Regardless of your constant European failure, the club of the capital dominates the football at national level. The PSG became the second most popular French club, due to a considerable number of star players, a strong advertising campaign, and evidently, a good football.
-
-<<<<<<< Updated upstream
-Motivated by this French rivalry, OM x PSG, I want to bring it to the world of computer vision. The object recognition became...
-=======
 Motivated by this French rivalry, OM x PSG, I want to bring it to the world of computer vision. Several applications can be deployed with computer vision, as object recognition, image segmentation, for example. We can employ it to many fields, industry, medicine, traffic control, agriculture. (To fill).
 
 ## Dataset
->>>>>>> Stashed changes
