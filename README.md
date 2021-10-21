@@ -39,3 +39,5 @@ Motivated by this French rivalry, OM x PSG, I want to bring it to the world of c
 The dataset for this project was obtained by web scraping, using the Selenium library. The code for the web scraping can be [found here](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Detection/tree/main/web_scraping). The images come from the Facebook page of each team. After the scraping process, the total of photos of the Olympique de Marseille was 3159, for the Paris Saint-Germain was 4355.
 
 Among the scraped photos, there’s a considerable amount of inappropriate for the project, a screening was performed, totaling 600 photos for each team.  These images was used to perform the classification model using transfer learning. For the object detect task, another screening was made, totaling 320 images for each team.
+
+![OM x PSG T-Shirt Recognition!](Image/img_stat.png "OM x PSG")
