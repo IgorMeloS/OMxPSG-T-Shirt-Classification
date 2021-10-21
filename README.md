@@ -5,7 +5,7 @@
 This project intends to build three different approaches for object detection. The objects to be detected are football jerseys (t-shirts) of the two most popular French teams, the Olympique de Marseille and the Paris Saint-Germain.
 
 
-**About the project**: The idea behind this project started with my training on Computer Vision (CV). In the beginning of my Artificial Intelligence journey, I wanted deploy a model of Convolutional Neural Network (CNN) to predict images from the both French teams. But, in this moment, I didn't have enough knowledge about CV. I’ve postulated for a job, to work with CV and, I presented this idea as personal project. The experience was a little bite different I had imagined. When I was asked about image pre-processing, about labelization and especially if, my model was capable to detect object with video stream, I didn’t have the good answers.
+**About the project**: The idea behind this project started with my training on Computer Vision (CV). In the beginning of my Artificial Intelligence journey, I wanted deploy a model of Convolutional Neural Network (CNN) to predict images from the both French teams. But, in this moment, I didn't have enough knowledge about CV. I’ve postulated for a job, to work with CV and, I presented this idea as personal project. The experience was a little bite different I had imagined. When I was asked about image preprocessing, about labeling and especially if, my model was capable to detect object with video stream, I didn’t have the good answers.
 
 After this experience, I was demotivated (I imagined that the classification model was enough), but I decided to go into a deep formation on CV and fill the empty blanks. During this process, I've studied many aspects about image preprocessing, CNN architectures (for classification and detection tasks) and OpenCV skills. The results presented here is a part of my studies and a nice little reward.
 
@@ -38,6 +38,19 @@ Motivated by this French rivalry, OM x PSG, I want to bring it to the world of c
 
 The dataset for this project was obtained by web scraping, using the Selenium library. The code for the web scraping can be [found here](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Detection/tree/main/web_scraping). The images come from the Facebook page of each team. After the scraping process, the total of photos of the Olympique de Marseille was 3159, for the Paris Saint-Germain was 4355.
 
-Among the scraped photos, there’s a considerable amount of inappropriate for the project, a screening was performed, totaling 600 photos for each team.  These images was used to perform the classification model using transfer learning. For the object detect task, another screening was made, totaling 320 images for each team.
+Among the scraped photos, there’s a considerable amount of inappropriate for the project, a screening was performed, totaling 600 photos for each team.  These images was used to perform the classification model using transfer learning. For the object detect task, another screening was made, totaling 320 images for each team. We present an image of width and height distribution.
 
-![OM x PSG T-Shirt Recognition!](Image/img_stat.png "OM x PSG")
+![Distribution of width and height](Image/img_stat.png "Width and Height Distribution")
+As we can see, almost all images have a good resolution and, the majority of images have a square aspect ratio. It's important to know the size distribution of the images, it can aid us to take decision about image resize. This graphic come from the [Roboflow](https://roboflow.com/) website.
+
+### Annotations
+
+Annotation is required for the object detection tasks. For this project, I’ve tried two annotations tools, [LabelImg](https://github.com/tzutalin/labelImg) (completely free) and [Roboflow](https://roboflow.com/). Why have I decided to use Roboflow? For one simple reason, experimentation. The website offers to us many tools as image labeling, image preprocessing (resize, rotation, crop etc.). What’s the problem to use Roboflow? There’s no problem, but the fact is, you share your dataset with the website. If you want you do not want to share your data, you can use OpenCV to preprocess your images (and make statistics) and LabelImg for labeling (there are also others annotation tools).
+
+## Frameworks, API and libraries
+
+In this project the models was trained using TensorFlow (2.1) and PyTorch (1.9). The APIs were TensorFlow Object Detection (for the SSD model) and Yolov5 from Ultralytics. OpenCV was used to the image preprocessing, to train the Haar cascade (train and detect) and video stream. All models were run on the GPU, otherwise, the time of running increases considerably.
+
+## Results
+
+## Applications
