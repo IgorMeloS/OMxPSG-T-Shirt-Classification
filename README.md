@@ -15,7 +15,7 @@ As said before, this project contains three different approaches, each of them c
   - The first attempt to detect the t-shirt was made with two methods. We consider the Viola-Jones algorithm to extract the Region of Interest (ROI), in this case any t-shirt. For the classification of OM and PSG t-shirts, we consider the principle of transfer learning to train the CNN. Once we have the two models, we merge them. Inside the ROI obtained with the Viola-Jones algorithm, we predict the CNN model for the two classes. The result was HORRIBLE !!!!
 - [OM x PSG T-Shirt Recognition with SSD.](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Recognition/tree/main/OMxPSG_T-Shirt_Recognition_with_ViolaJones_and_CNN.)
   - The second approach was successful. Using the TensorFlow Object Detection API, we deploy the Single Shot Detection (SSD), using the pre-trained model.
-- [OM x PSG T-Shirt Recognition with YOLO.](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Recognition/tree/main/OMxPSG_T-Shirt_Recognition_with_ViolaJones_and_CNN.)
+- [OM x PSG T-Shirt Recognition with YOLO.](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Detection/tree/main/OMxPSG_YOLO)
   - The last approach was so successful as the second. Considering the YOLO version 5 from the Ultralytics, here we use PyTorch. I've trained the model with the weight from the COCO dataset.
 
 **A more detailed explanation about each method and the metrics results can be found inside each above folder.**
