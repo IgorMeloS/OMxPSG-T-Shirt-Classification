@@ -1,0 +1,85 @@
+Overriding model.yaml nc=80 with nc=2
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  2    115712  models.common.C3                        [128, 128, 2]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1   1182720  models.common.C3                        [512, 512, 1]
+  9                -1  1    656896  models.common.SPPF                      [512, 512, 5]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     18879  models.yolo.Detect                      [2, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model Summary: 270 layers, 7025023 parameters, 7025023 gradients, 15.9 GFLOPs
+Transferred 343/349 items from yolov5s.pt
+Scaled weight_decay = 0.0005
+[34m[1moptimizer:[39m[22m SGD with parameter groups 57 weight, 60 weight (no decay), 60 bias
+[34m[1mtrain: [39m[22mScanning '../dataset_v0/train/labels.cache' images and labels... 495 foun
+[34m[1mval: [39m[22mScanning '../dataset_v0/valid/labels.cache' images and labels... 220 found,
+Plotting labels...
+Image sizes 640 train, 640 val
+Using 1 dataloader workers
+Logging results to [1m../results/exp3
+Starting training for 3 epochs...
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+  0%|                                                    | 0/31 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+       0/2     3.22G    0.1097   0.03079   0.03034        36       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299     0.0126     0.0471    0.00613    0.00109
+Saving model artifact on epoch  1
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+       1/2        3G   0.08447   0.03013   0.02874        37       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299     0.0554      0.162     0.0398    0.00913
+Saving model artifact on epoch  2
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+       2/2     3.23G   0.07325   0.03206   0.02784        37       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.141      0.152     0.0844     0.0198
+Optimizer stripped from ../results/exp3/weights/last.pt, 14.4MB
+Optimizer stripped from ../results/exp3/weights/best.pt, 14.4MB
+3 epochs completed in 0.019 hours.
+Validating ../results/exp3/weights/best.pt...
+Fusing layers...
+Model Summary: 213 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299     0.0891      0.325      0.082     0.0192
+                  OM        220        134      0.093      0.425     0.0977     0.0209
+                 PSG        220        165     0.0851      0.224     0.0662     0.0176

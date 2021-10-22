@@ -1,0 +1,845 @@
+2021-10-21 17:06:14,958 INFO    MainThread:13770 [internal.py:wandb_internal():89] W&B internal server running at pid: 13770, started at: 2021-10-21 17:06:14.958071
+2021-10-21 17:06:14,959 INFO    WriterThread:13770 [datastore.py:open_for_write():77] open: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/run-33rruzyc.wandb
+2021-10-21 17:06:14,960 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: check_version
+2021-10-21 17:06:14,961 DEBUG   SenderThread:13770 [sender.py:send():185] send: header
+2021-10-21 17:06:14,961 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: check_version
+2021-10-21 17:06:15,020 DEBUG   SenderThread:13770 [sender.py:send():185] send: run
+2021-10-21 17:06:15,028 INFO    SenderThread:13770 [sender.py:_maybe_setup_resume():428] checking resume status for None/results/33rruzyc
+2021-10-21 17:06:15,422 INFO    SenderThread:13770 [dir_watcher.py:__init__():169] watching files in: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files
+2021-10-21 17:06:15,423 INFO    SenderThread:13770 [sender.py:_start_run_threads():749] run started: 33rruzyc with start time 1634828774
+2021-10-21 17:06:15,423 DEBUG   SenderThread:13770 [sender.py:send():185] send: summary
+2021-10-21 17:06:15,424 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-21 17:06:15,426 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: run_start
+2021-10-21 17:06:16,423 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/wandb-summary.json
+2021-10-21 17:06:16,475 DEBUG   HandlerThread:13770 [meta.py:__init__():40] meta init
+2021-10-21 17:06:16,475 DEBUG   HandlerThread:13770 [meta.py:__init__():54] meta init done
+2021-10-21 17:06:16,475 DEBUG   HandlerThread:13770 [meta.py:probe():211] probe
+2021-10-21 17:06:16,482 DEBUG   HandlerThread:13770 [meta.py:_setup_git():201] setup git
+2021-10-21 17:06:16,503 DEBUG   HandlerThread:13770 [meta.py:_setup_git():208] setup git done
+2021-10-21 17:06:16,504 DEBUG   HandlerThread:13770 [meta.py:_save_pip():58] save pip
+2021-10-21 17:06:16,504 DEBUG   HandlerThread:13770 [meta.py:_save_pip():72] save pip done
+2021-10-21 17:06:16,504 DEBUG   HandlerThread:13770 [meta.py:_save_conda():79] save conda
+2021-10-21 17:06:17,422 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/requirements.txt
+2021-10-21 17:06:17,422 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/conda-environment.yaml
+2021-10-21 17:06:18,801 DEBUG   HandlerThread:13770 [meta.py:_save_conda():87] save conda done
+2021-10-21 17:06:18,801 DEBUG   HandlerThread:13770 [meta.py:probe():249] probe done
+2021-10-21 17:06:18,807 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:18,808 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file wandb-metadata.json with policy now
+2021-10-21 17:06:18,814 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-21 17:06:18,824 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: stop_status
+2021-10-21 17:06:18,969 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:19,312 INFO    Thread-11 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/19vzaqc5-wandb-metadata.json
+2021-10-21 17:06:19,423 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/conda-environment.yaml
+2021-10-21 17:06:19,423 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/wandb-metadata.json
+2021-10-21 17:06:19,423 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:24,424 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:26,424 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:28,425 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:30,426 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:32,427 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:34,427 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:36,428 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:37,147 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-21 17:06:37,147 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: stop_status
+2021-10-21 17:06:38,428 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:40,429 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:42,430 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:44,430 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:44,703 DEBUG   SenderThread:13770 [sender.py:send():185] send: stats
+2021-10-21 17:06:46,431 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/config.yaml
+2021-10-21 17:06:48,917 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:48,918 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Labels_0_0.jpg with policy now
+2021-10-21 17:06:48,919 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:48,919 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Labels_0_1.jpg with policy now
+2021-10-21 17:06:48,981 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:48,981 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Mosaics_0_0.jpg with policy now
+2021-10-21 17:06:48,982 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:48,982 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Mosaics_0_1.jpg with policy now
+2021-10-21 17:06:48,987 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:48,987 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Mosaics_0_2.jpg with policy now
+2021-10-21 17:06:49,119 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,119 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_0.png with policy now
+2021-10-21 17:06:49,122 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,123 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_00.boxes2D.json with policy now
+2021-10-21 17:06:49,123 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,124 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,124 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_1.png with policy now
+2021-10-21 17:06:49,124 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,124 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_10.boxes2D.json with policy now
+2021-10-21 17:06:49,125 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,125 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,125 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_2.png with policy now
+2021-10-21 17:06:49,127 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,127 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_20.boxes2D.json with policy now
+2021-10-21 17:06:49,129 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,129 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,129 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_3.png with policy now
+2021-10-21 17:06:49,130 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,130 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_30.boxes2D.json with policy now
+2021-10-21 17:06:49,138 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,139 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,139 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_4.png with policy now
+2021-10-21 17:06:49,145 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,145 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_40.boxes2D.json with policy now
+2021-10-21 17:06:49,146 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,146 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,146 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_5.png with policy now
+2021-10-21 17:06:49,147 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,147 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_50.boxes2D.json with policy now
+2021-10-21 17:06:49,150 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,150 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,151 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_6.png with policy now
+2021-10-21 17:06:49,151 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,151 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_60.boxes2D.json with policy now
+2021-10-21 17:06:49,152 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,152 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,152 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_7.png with policy now
+2021-10-21 17:06:49,152 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,152 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_70.boxes2D.json with policy now
+2021-10-21 17:06:49,152 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,153 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,153 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_8.png with policy now
+2021-10-21 17:06:49,157 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,158 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_80.boxes2D.json with policy now
+2021-10-21 17:06:49,169 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,169 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,170 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_9.png with policy now
+2021-10-21 17:06:49,170 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,170 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_90.boxes2D.json with policy now
+2021-10-21 17:06:49,176 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,176 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,176 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_10.png with policy now
+2021-10-21 17:06:49,181 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,181 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_100.boxes2D.json with policy now
+2021-10-21 17:06:49,181 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,182 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,182 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_11.png with policy now
+2021-10-21 17:06:49,191 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,192 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_110.boxes2D.json with policy now
+2021-10-21 17:06:49,192 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,193 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,193 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_12.png with policy now
+2021-10-21 17:06:49,194 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,194 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_120.boxes2D.json with policy now
+2021-10-21 17:06:49,194 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,195 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,195 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_13.png with policy now
+2021-10-21 17:06:49,195 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,196 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_130.boxes2D.json with policy now
+2021-10-21 17:06:49,196 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,196 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,196 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_14.png with policy now
+2021-10-21 17:06:49,197 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,197 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_140.boxes2D.json with policy now
+2021-10-21 17:06:49,201 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,202 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,202 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_15.png with policy now
+2021-10-21 17:06:49,202 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:06:49,202 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_150.boxes2D.json with policy now
+2021-10-21 17:06:49,203 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:06:49,321 DEBUG   SenderThread:13770 [sender.py:send():185] send: history
+2021-10-21 17:06:49,323 DEBUG   SenderThread:13770 [sender.py:send():185] send: summary
+2021-10-21 17:06:49,342 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-21 17:06:49,433 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/wandb-summary.json
+2021-10-21 17:06:49,433 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Mosaics_0_0.jpg
+2021-10-21 17:06:49,433 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_7.png
+2021-10-21 17:06:49,434 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_100.boxes2D.json
+2021-10-21 17:06:49,434 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_2.png
+2021-10-21 17:06:49,434 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_60.boxes2D.json
+2021-10-21 17:06:49,434 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_130.boxes2D.json
+2021-10-21 17:06:49,434 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Mosaics_0_1.jpg
+2021-10-21 17:06:49,434 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_70.boxes2D.json
+2021-10-21 17:06:49,434 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_150.boxes2D.json
+2021-10-21 17:06:49,434 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_15.png
+2021-10-21 17:06:49,435 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_110.boxes2D.json
+2021-10-21 17:06:49,435 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_5.png
+2021-10-21 17:06:49,435 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_10.png
+2021-10-21 17:06:49,435 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_1.png
+2021-10-21 17:06:49,435 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_6.png
+2021-10-21 17:06:49,435 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_3.png
+2021-10-21 17:06:49,435 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_14.png
+2021-10-21 17:06:49,435 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_40.boxes2D.json
+2021-10-21 17:06:49,435 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Labels_0_0.jpg
+2021-10-21 17:06:49,435 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_30.boxes2D.json
+2021-10-21 17:06:49,436 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_20.boxes2D.json
+2021-10-21 17:06:49,436 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_8.png
+2021-10-21 17:06:49,436 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_4.png
+2021-10-21 17:06:49,436 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_13.png
+2021-10-21 17:06:49,436 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Mosaics_0_2.jpg
+2021-10-21 17:06:49,436 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_80.boxes2D.json
+2021-10-21 17:06:49,436 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_00.boxes2D.json
+2021-10-21 17:06:49,436 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_0.png
+2021-10-21 17:06:49,436 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_50.boxes2D.json
+2021-10-21 17:06:49,436 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_120.boxes2D.json
+2021-10-21 17:06:49,436 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_140.boxes2D.json
+2021-10-21 17:06:49,437 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_9.png
+2021-10-21 17:06:49,437 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_12.png
+2021-10-21 17:06:49,437 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_10.boxes2D.json
+2021-10-21 17:06:49,437 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Labels_0_1.jpg
+2021-10-21 17:06:49,437 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_90.boxes2D.json
+2021-10-21 17:06:49,437 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_11.png
+2021-10-21 17:06:49,437 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger
+2021-10-21 17:06:49,437 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata
+2021-10-21 17:06:49,437 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images
+2021-10-21 17:06:49,437 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger
+2021-10-21 17:06:49,437 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D
+2021-10-21 17:06:49,438 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media
+2021-10-21 17:06:49,693 INFO    Thread-12 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3lxdf821-media/images/Labels_0_0.jpg
+2021-10-21 17:06:49,734 INFO    Thread-13 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/346hj6jx-media/images/Labels_0_1.jpg
+2021-10-21 17:06:49,888 INFO    Thread-20 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3e4wc89k-media/metadata/boxes2D/Bounding Box Debugger/Images_0_10.boxes2D.json
+2021-10-21 17:06:49,895 INFO    Thread-22 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1jdi9mgu-media/metadata/boxes2D/Bounding Box Debugger/Images_0_20.boxes2D.json
+2021-10-21 17:06:49,900 INFO    Thread-16 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/83i49dcw-media/images/Mosaics_0_2.jpg
+2021-10-21 17:06:49,946 INFO    Thread-18 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3mt0gpqi-media/metadata/boxes2D/Bounding Box Debugger/Images_0_00.boxes2D.json
+2021-10-21 17:06:49,952 INFO    Thread-15 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2101wyfl-media/images/Mosaics_0_1.jpg
+2021-10-21 17:06:49,967 INFO    Thread-26 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1z9b8x0h-media/metadata/boxes2D/Bounding Box Debugger/Images_0_40.boxes2D.json
+2021-10-21 17:06:49,971 INFO    Thread-24 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1webzmdl-media/metadata/boxes2D/Bounding Box Debugger/Images_0_30.boxes2D.json
+2021-10-21 17:06:50,018 INFO    Thread-14 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/35dotgrq-media/images/Mosaics_0_0.jpg
+2021-10-21 17:06:50,042 INFO    Thread-30 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3pzw2hem-media/metadata/boxes2D/Bounding Box Debugger/Images_0_60.boxes2D.json
+2021-10-21 17:06:50,089 INFO    Thread-32 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3cb4e0cb-media/metadata/boxes2D/Bounding Box Debugger/Images_0_70.boxes2D.json
+2021-10-21 17:06:50,141 INFO    Thread-28 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3rssdlwa-media/metadata/boxes2D/Bounding Box Debugger/Images_0_50.boxes2D.json
+2021-10-21 17:06:50,148 INFO    Thread-17 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/31iw9hem-media/images/Bounding Box Debugger/Images_0_0.png
+2021-10-21 17:06:50,185 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: log_artifact
+2021-10-21 17:06:50,186 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: log_artifact
+2021-10-21 17:06:50,199 INFO    Thread-44 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2n0zmo1q-media/metadata/boxes2D/Bounding Box Debugger/Images_0_130.boxes2D.json
+2021-10-21 17:06:50,205 INFO    Thread-19 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1r8tjrp1-media/images/Bounding Box Debugger/Images_0_1.png
+2021-10-21 17:06:50,215 INFO    Thread-48 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/phvuusxi-media/metadata/boxes2D/Bounding Box Debugger/Images_0_150.boxes2D.json
+2021-10-21 17:06:50,225 INFO    Thread-36 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3kbz2rhn-media/metadata/boxes2D/Bounding Box Debugger/Images_0_90.boxes2D.json
+2021-10-21 17:06:50,220 INFO    Thread-42 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1touyg0o-media/metadata/boxes2D/Bounding Box Debugger/Images_0_120.boxes2D.json
+2021-10-21 17:06:50,216 INFO    Thread-38 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/lzkqmc4k-media/metadata/boxes2D/Bounding Box Debugger/Images_0_100.boxes2D.json
+2021-10-21 17:06:50,296 INFO    Thread-27 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3w1fzhwe-media/images/Bounding Box Debugger/Images_0_5.png
+2021-10-21 17:06:50,333 INFO    Thread-34 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1ko1x7gi-media/metadata/boxes2D/Bounding Box Debugger/Images_0_80.boxes2D.json
+2021-10-21 17:06:50,355 INFO    Thread-40 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/qyx42wxb-media/metadata/boxes2D/Bounding Box Debugger/Images_0_110.boxes2D.json
+2021-10-21 17:06:50,356 INFO    Thread-46 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3b6rbhby-media/metadata/boxes2D/Bounding Box Debugger/Images_0_140.boxes2D.json
+2021-10-21 17:06:50,384 INFO    Thread-37 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2nd3zq5q-media/images/Bounding Box Debugger/Images_0_10.png
+2021-10-21 17:06:50,405 INFO    Thread-23 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2tgjl974-media/images/Bounding Box Debugger/Images_0_3.png
+2021-10-21 17:06:50,422 INFO    Thread-25 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2azfg7j0-media/images/Bounding Box Debugger/Images_0_4.png
+2021-10-21 17:06:50,434 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:50,440 INFO    Thread-39 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3uv80bwr-media/images/Bounding Box Debugger/Images_0_11.png
+2021-10-21 17:06:50,458 INFO    Thread-45 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/4okhk59k-media/images/Bounding Box Debugger/Images_0_14.png
+2021-10-21 17:06:50,471 INFO    Thread-35 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1wszwin1-media/images/Bounding Box Debugger/Images_0_9.png
+2021-10-21 17:06:50,476 INFO    Thread-43 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/349jpggx-media/images/Bounding Box Debugger/Images_0_13.png
+2021-10-21 17:06:50,478 INFO    Thread-29 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1bw74wtr-media/images/Bounding Box Debugger/Images_0_6.png
+2021-10-21 17:06:50,484 INFO    Thread-33 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/27zg87fc-media/images/Bounding Box Debugger/Images_0_8.png
+2021-10-21 17:06:50,485 INFO    Thread-21 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1kwesnd2-media/images/Bounding Box Debugger/Images_0_2.png
+2021-10-21 17:06:50,500 INFO    Thread-47 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1hpjnuzz-media/images/Bounding Box Debugger/Images_0_15.png
+2021-10-21 17:06:50,508 INFO    Thread-41 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/35aehn38-media/images/Bounding Box Debugger/Images_0_12.png
+2021-10-21 17:06:50,543 INFO    Thread-31 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/4jznr4or-media/images/Bounding Box Debugger/Images_0_7.png
+2021-10-21 17:06:52,305 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-21 17:06:52,435 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:54,147 INFO    Thread-50 :13770 [upload_job.py:push():95] Uploaded file /home/igor/.cache/wandb/artifacts/obj/md5/05/7ed807a9de1d4561060c2b3a9ea937
+2021-10-21 17:06:54,437 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:55,123 INFO    SenderThread:13770 [sender.py:send_request_log_artifact():907] logged artifact run_33rruzyc_model - {'id': 'QXJ0aWZhY3Q6MzI2MDk4Njg=', 'digest': '4397b80c5ada2bf0d51b6654146a7c5e', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU0NjExMTk=', 'latestArtifact': None}, 'version': 'latest'}
+2021-10-21 17:06:55,127 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: stop_status
+2021-10-21 17:06:56,439 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:06:58,440 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:00,441 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:02,443 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:04,444 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:06,445 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:08,447 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:10,275 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-21 17:07:10,275 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: stop_status
+2021-10-21 17:07:10,640 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,640 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_0.png with policy now
+2021-10-21 17:07:10,642 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,642 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_00.boxes2D.json with policy now
+2021-10-21 17:07:10,648 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,649 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,649 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_1.png with policy now
+2021-10-21 17:07:10,661 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,662 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_10.boxes2D.json with policy now
+2021-10-21 17:07:10,663 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,664 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,664 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_2.png with policy now
+2021-10-21 17:07:10,664 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,664 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_20.boxes2D.json with policy now
+2021-10-21 17:07:10,665 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,665 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,665 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_3.png with policy now
+2021-10-21 17:07:10,665 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,666 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_30.boxes2D.json with policy now
+2021-10-21 17:07:10,666 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,666 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,666 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_4.png with policy now
+2021-10-21 17:07:10,667 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,667 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_40.boxes2D.json with policy now
+2021-10-21 17:07:10,668 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,668 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,668 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_5.png with policy now
+2021-10-21 17:07:10,668 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,669 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_50.boxes2D.json with policy now
+2021-10-21 17:07:10,669 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,669 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,669 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_6.png with policy now
+2021-10-21 17:07:10,670 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,670 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_60.boxes2D.json with policy now
+2021-10-21 17:07:10,673 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,673 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,673 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_7.png with policy now
+2021-10-21 17:07:10,680 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,681 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_70.boxes2D.json with policy now
+2021-10-21 17:07:10,684 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,685 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,685 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_8.png with policy now
+2021-10-21 17:07:10,686 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,686 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_80.boxes2D.json with policy now
+2021-10-21 17:07:10,686 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,687 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,687 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_9.png with policy now
+2021-10-21 17:07:10,687 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,687 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_90.boxes2D.json with policy now
+2021-10-21 17:07:10,688 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,688 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,688 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_10.png with policy now
+2021-10-21 17:07:10,689 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,689 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_100.boxes2D.json with policy now
+2021-10-21 17:07:10,696 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,696 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,696 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_11.png with policy now
+2021-10-21 17:07:10,697 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,697 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_110.boxes2D.json with policy now
+2021-10-21 17:07:10,699 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,699 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,699 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_12.png with policy now
+2021-10-21 17:07:10,712 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,713 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_120.boxes2D.json with policy now
+2021-10-21 17:07:10,714 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,715 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,718 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_13.png with policy now
+2021-10-21 17:07:10,721 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,721 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_130.boxes2D.json with policy now
+2021-10-21 17:07:10,722 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,722 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,722 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_14.png with policy now
+2021-10-21 17:07:10,746 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,746 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_140.boxes2D.json with policy now
+2021-10-21 17:07:10,762 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,762 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,762 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_15.png with policy now
+2021-10-21 17:07:10,768 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:10,768 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_150.boxes2D.json with policy now
+2021-10-21 17:07:10,769 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:10,840 DEBUG   SenderThread:13770 [sender.py:send():185] send: history
+2021-10-21 17:07:10,847 DEBUG   SenderThread:13770 [sender.py:send():185] send: summary
+2021-10-21 17:07:10,860 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-21 17:07:11,227 INFO    Thread-52 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1ph8s7k3-media/metadata/boxes2D/Bounding Box Debugger/Images_1_00.boxes2D.json
+2021-10-21 17:07:11,270 INFO    Thread-54 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/13qo0rya-media/metadata/boxes2D/Bounding Box Debugger/Images_1_10.boxes2D.json
+2021-10-21 17:07:11,335 INFO    Thread-56 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3s58jdmc-media/metadata/boxes2D/Bounding Box Debugger/Images_1_20.boxes2D.json
+2021-10-21 17:07:11,407 INFO    Thread-58 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3lpvz3rh-media/metadata/boxes2D/Bounding Box Debugger/Images_1_30.boxes2D.json
+2021-10-21 17:07:11,438 INFO    Thread-62 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2o0rddkn-media/metadata/boxes2D/Bounding Box Debugger/Images_1_50.boxes2D.json
+2021-10-21 17:07:11,449 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/wandb-summary.json
+2021-10-21 17:07:11,450 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_150.boxes2D.json
+2021-10-21 17:07:11,450 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_3.png
+2021-10-21 17:07:11,450 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_90.boxes2D.json
+2021-10-21 17:07:11,450 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_80.boxes2D.json
+2021-10-21 17:07:11,450 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_15.png
+2021-10-21 17:07:11,450 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_10.png
+2021-10-21 17:07:11,450 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_9.png
+2021-10-21 17:07:11,451 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_5.png
+2021-10-21 17:07:11,451 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_14.png
+2021-10-21 17:07:11,451 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_13.png
+2021-10-21 17:07:11,451 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_130.boxes2D.json
+2021-10-21 17:07:11,451 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_140.boxes2D.json
+2021-10-21 17:07:11,451 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_4.png
+2021-10-21 17:07:11,451 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_00.boxes2D.json
+2021-10-21 17:07:11,451 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_60.boxes2D.json
+2021-10-21 17:07:11,452 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_100.boxes2D.json
+2021-10-21 17:07:11,452 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_2.png
+2021-10-21 17:07:11,452 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_120.boxes2D.json
+2021-10-21 17:07:11,452 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_11.png
+2021-10-21 17:07:11,452 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_8.png
+2021-10-21 17:07:11,452 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_30.boxes2D.json
+2021-10-21 17:07:11,452 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_7.png
+2021-10-21 17:07:11,452 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_12.png
+2021-10-21 17:07:11,452 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_50.boxes2D.json
+2021-10-21 17:07:11,452 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_0.png
+2021-10-21 17:07:11,453 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_10.boxes2D.json
+2021-10-21 17:07:11,453 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_20.boxes2D.json
+2021-10-21 17:07:11,453 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_40.boxes2D.json
+2021-10-21 17:07:11,453 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_70.boxes2D.json
+2021-10-21 17:07:11,453 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_110.boxes2D.json
+2021-10-21 17:07:11,453 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_6.png
+2021-10-21 17:07:11,453 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_1.png
+2021-10-21 17:07:11,453 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger
+2021-10-21 17:07:11,453 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger
+2021-10-21 17:07:11,457 INFO    Thread-51 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/htv4we4h-media/images/Bounding Box Debugger/Images_1_0.png
+2021-10-21 17:07:11,476 INFO    Thread-60 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3mhbl01e-media/metadata/boxes2D/Bounding Box Debugger/Images_1_40.boxes2D.json
+2021-10-21 17:07:11,539 INFO    Thread-64 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2h5ruqjm-media/metadata/boxes2D/Bounding Box Debugger/Images_1_60.boxes2D.json
+2021-10-21 17:07:11,650 INFO    Thread-70 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/31xyqvv5-media/metadata/boxes2D/Bounding Box Debugger/Images_1_90.boxes2D.json
+2021-10-21 17:07:11,686 INFO    Thread-53 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3jt6l17y-media/images/Bounding Box Debugger/Images_1_1.png
+2021-10-21 17:07:11,688 INFO    Thread-74 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3ovgdt7u-media/metadata/boxes2D/Bounding Box Debugger/Images_1_110.boxes2D.json
+2021-10-21 17:07:11,707 INFO    Thread-72 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1uc9alzi-media/metadata/boxes2D/Bounding Box Debugger/Images_1_100.boxes2D.json
+2021-10-21 17:07:11,734 INFO    Thread-76 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/6926tn2z-media/metadata/boxes2D/Bounding Box Debugger/Images_1_120.boxes2D.json
+2021-10-21 17:07:11,747 INFO    Thread-78 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2o57caew-media/metadata/boxes2D/Bounding Box Debugger/Images_1_130.boxes2D.json
+2021-10-21 17:07:11,779 INFO    Thread-82 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1cldzc9v-media/metadata/boxes2D/Bounding Box Debugger/Images_1_150.boxes2D.json
+2021-10-21 17:07:11,786 INFO    Thread-80 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2pppho37-media/metadata/boxes2D/Bounding Box Debugger/Images_1_140.boxes2D.json
+2021-10-21 17:07:11,809 INFO    Thread-68 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1c7ivd3q-media/metadata/boxes2D/Bounding Box Debugger/Images_1_80.boxes2D.json
+2021-10-21 17:07:11,814 INFO    Thread-66 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2j17p3p9-media/metadata/boxes2D/Bounding Box Debugger/Images_1_70.boxes2D.json
+2021-10-21 17:07:11,855 INFO    Thread-55 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/12t2yvgj-media/images/Bounding Box Debugger/Images_1_2.png
+2021-10-21 17:07:11,925 INFO    Thread-57 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3go0kaia-media/images/Bounding Box Debugger/Images_1_3.png
+2021-10-21 17:07:11,942 INFO    Thread-63 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3vl5p731-media/images/Bounding Box Debugger/Images_1_6.png
+2021-10-21 17:07:11,946 INFO    Thread-59 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3kr3zbqf-media/images/Bounding Box Debugger/Images_1_4.png
+2021-10-21 17:07:11,971 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: log_artifact
+2021-10-21 17:07:11,976 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: log_artifact
+2021-10-21 17:07:11,988 INFO    Thread-61 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2o2hma0u-media/images/Bounding Box Debugger/Images_1_5.png
+2021-10-21 17:07:11,995 INFO    Thread-65 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1ufbs5xg-media/images/Bounding Box Debugger/Images_1_7.png
+2021-10-21 17:07:12,019 INFO    Thread-71 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2msr1z0z-media/images/Bounding Box Debugger/Images_1_10.png
+2021-10-21 17:07:12,024 INFO    Thread-79 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1zfm2xs3-media/images/Bounding Box Debugger/Images_1_14.png
+2021-10-21 17:07:12,030 INFO    Thread-67 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/38l3sm29-media/images/Bounding Box Debugger/Images_1_8.png
+2021-10-21 17:07:12,036 INFO    Thread-69 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1scire2f-media/images/Bounding Box Debugger/Images_1_9.png
+2021-10-21 17:07:12,047 INFO    Thread-75 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3ayz440d-media/images/Bounding Box Debugger/Images_1_12.png
+2021-10-21 17:07:12,132 INFO    Thread-81 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/29ovup1v-media/images/Bounding Box Debugger/Images_1_15.png
+2021-10-21 17:07:12,201 INFO    Thread-73 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1nts0kir-media/images/Bounding Box Debugger/Images_1_11.png
+2021-10-21 17:07:12,206 INFO    Thread-77 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2utrzx1b-media/images/Bounding Box Debugger/Images_1_13.png
+2021-10-21 17:07:12,450 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:14,452 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:15,750 INFO    Thread-84 :13770 [upload_job.py:push():95] Uploaded file /home/igor/.cache/wandb/artifacts/obj/md5/4c/e1ed52f2ac51627248fc8e8a191e75
+2021-10-21 17:07:16,454 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:16,821 INFO    SenderThread:13770 [sender.py:send_request_log_artifact():907] logged artifact run_33rruzyc_model - {'id': 'QXJ0aWZhY3Q6MzI2MDk5Njc=', 'digest': 'dc4605d549a1858837653510401abd63', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU0NjExMTk=', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MzI2MDk4Njg=', 'versionIndex': 0}}, 'version': 'latest'}
+2021-10-21 17:07:17,011 DEBUG   SenderThread:13770 [sender.py:send():185] send: stats
+2021-10-21 17:07:17,455 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/config.yaml
+2021-10-21 17:07:18,456 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:20,458 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:22,460 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:24,462 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:25,432 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-21 17:07:25,433 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: stop_status
+2021-10-21 17:07:26,463 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:28,465 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:30,467 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:33,652 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,652 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_0.png with policy now
+2021-10-21 17:07:33,656 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,656 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_00.boxes2D.json with policy now
+2021-10-21 17:07:33,666 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,666 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,672 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_1.png with policy now
+2021-10-21 17:07:33,681 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,681 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_10.boxes2D.json with policy now
+2021-10-21 17:07:33,686 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,686 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,686 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_2.png with policy now
+2021-10-21 17:07:33,688 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,688 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_20.boxes2D.json with policy now
+2021-10-21 17:07:33,689 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,689 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,690 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_3.png with policy now
+2021-10-21 17:07:33,691 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,691 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_30.boxes2D.json with policy now
+2021-10-21 17:07:33,695 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,695 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,695 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_4.png with policy now
+2021-10-21 17:07:33,696 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,696 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_40.boxes2D.json with policy now
+2021-10-21 17:07:33,697 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,697 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,697 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_5.png with policy now
+2021-10-21 17:07:33,706 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,707 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_50.boxes2D.json with policy now
+2021-10-21 17:07:33,719 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,719 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,720 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_6.png with policy now
+2021-10-21 17:07:33,722 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,722 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_60.boxes2D.json with policy now
+2021-10-21 17:07:33,724 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,724 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,724 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_7.png with policy now
+2021-10-21 17:07:33,726 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,726 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_70.boxes2D.json with policy now
+2021-10-21 17:07:33,734 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,734 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,734 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_8.png with policy now
+2021-10-21 17:07:33,736 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,736 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_80.boxes2D.json with policy now
+2021-10-21 17:07:33,749 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,749 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,749 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_9.png with policy now
+2021-10-21 17:07:33,750 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,753 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_90.boxes2D.json with policy now
+2021-10-21 17:07:33,756 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,756 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,756 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_10.png with policy now
+2021-10-21 17:07:33,758 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,759 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_100.boxes2D.json with policy now
+2021-10-21 17:07:33,760 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,760 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,763 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_11.png with policy now
+2021-10-21 17:07:33,767 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,767 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_110.boxes2D.json with policy now
+2021-10-21 17:07:33,769 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,769 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,769 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_12.png with policy now
+2021-10-21 17:07:33,778 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,778 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_120.boxes2D.json with policy now
+2021-10-21 17:07:33,782 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,785 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,788 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_13.png with policy now
+2021-10-21 17:07:33,790 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,790 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_130.boxes2D.json with policy now
+2021-10-21 17:07:33,797 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,797 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,797 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_14.png with policy now
+2021-10-21 17:07:33,798 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,798 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_140.boxes2D.json with policy now
+2021-10-21 17:07:33,808 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,808 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,809 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_2_15.png with policy now
+2021-10-21 17:07:33,810 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:33,813 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_2_150.boxes2D.json with policy now
+2021-10-21 17:07:33,818 DEBUG   SenderThread:13770 [sender.py:send():185] send: config
+2021-10-21 17:07:33,855 DEBUG   SenderThread:13770 [sender.py:send():185] send: history
+2021-10-21 17:07:33,856 DEBUG   SenderThread:13770 [sender.py:send():185] send: summary
+2021-10-21 17:07:33,861 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-21 17:07:34,248 INFO    Thread-86 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2xrz8s61-media/metadata/boxes2D/Bounding Box Debugger/Images_2_00.boxes2D.json
+2021-10-21 17:07:34,421 INFO    Thread-90 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1xtxjcvq-media/metadata/boxes2D/Bounding Box Debugger/Images_2_20.boxes2D.json
+2021-10-21 17:07:34,438 INFO    Thread-88 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/37meipcd-media/metadata/boxes2D/Bounding Box Debugger/Images_2_10.boxes2D.json
+2021-10-21 17:07:34,474 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/wandb-summary.json
+2021-10-21 17:07:34,474 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:34,474 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_7.png
+2021-10-21 17:07:34,475 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_5.png
+2021-10-21 17:07:34,475 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_150.boxes2D.json
+2021-10-21 17:07:34,476 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_13.png
+2021-10-21 17:07:34,476 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_100.boxes2D.json
+2021-10-21 17:07:34,477 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_110.boxes2D.json
+2021-10-21 17:07:34,477 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_8.png
+2021-10-21 17:07:34,478 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_12.png
+2021-10-21 17:07:34,478 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_120.boxes2D.json
+2021-10-21 17:07:34,479 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_15.png
+2021-10-21 17:07:34,479 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_130.boxes2D.json
+2021-10-21 17:07:34,480 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_20.boxes2D.json
+2021-10-21 17:07:34,480 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_14.png
+2021-10-21 17:07:34,481 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_2.png
+2021-10-21 17:07:34,481 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_80.boxes2D.json
+2021-10-21 17:07:34,482 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_9.png
+2021-10-21 17:07:34,482 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_0.png
+2021-10-21 17:07:34,483 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_50.boxes2D.json
+2021-10-21 17:07:34,483 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_10.png
+2021-10-21 17:07:34,484 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_4.png
+2021-10-21 17:07:34,485 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_90.boxes2D.json
+2021-10-21 17:07:34,485 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_6.png
+2021-10-21 17:07:34,485 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_140.boxes2D.json
+2021-10-21 17:07:34,486 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_1.png
+2021-10-21 17:07:34,487 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_10.boxes2D.json
+2021-10-21 17:07:34,487 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_70.boxes2D.json
+2021-10-21 17:07:34,488 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_00.boxes2D.json
+2021-10-21 17:07:34,488 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_3.png
+2021-10-21 17:07:34,489 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_11.png
+2021-10-21 17:07:34,489 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_60.boxes2D.json
+2021-10-21 17:07:34,490 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_40.boxes2D.json
+2021-10-21 17:07:34,490 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_30.boxes2D.json
+2021-10-21 17:07:34,491 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger
+2021-10-21 17:07:34,492 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger
+2021-10-21 17:07:34,615 INFO    Thread-94 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3b91wze3-media/metadata/boxes2D/Bounding Box Debugger/Images_2_40.boxes2D.json
+2021-10-21 17:07:34,655 INFO    Thread-104:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1bdtixrj-media/metadata/boxes2D/Bounding Box Debugger/Images_2_90.boxes2D.json
+2021-10-21 17:07:34,657 INFO    Thread-108:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/mgdo5y3q-media/metadata/boxes2D/Bounding Box Debugger/Images_2_110.boxes2D.json
+2021-10-21 17:07:34,664 INFO    Thread-102:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3hzsowga-media/metadata/boxes2D/Bounding Box Debugger/Images_2_80.boxes2D.json
+2021-10-21 17:07:34,684 INFO    Thread-96 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3uox56pf-media/metadata/boxes2D/Bounding Box Debugger/Images_2_50.boxes2D.json
+2021-10-21 17:07:34,704 INFO    Thread-85 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/134r9m1c-media/images/Bounding Box Debugger/Images_2_0.png
+2021-10-21 17:07:34,705 INFO    Thread-98 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1ou254ca-media/metadata/boxes2D/Bounding Box Debugger/Images_2_60.boxes2D.json
+2021-10-21 17:07:34,726 INFO    Thread-92 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/mfyf8kut-media/metadata/boxes2D/Bounding Box Debugger/Images_2_30.boxes2D.json
+2021-10-21 17:07:34,728 INFO    Thread-89 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/wmrnkgsa-media/images/Bounding Box Debugger/Images_2_2.png
+2021-10-21 17:07:34,759 INFO    Thread-114:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1z7m59j5-media/metadata/boxes2D/Bounding Box Debugger/Images_2_140.boxes2D.json
+2021-10-21 17:07:34,762 INFO    Thread-106:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3cdl3t7c-media/metadata/boxes2D/Bounding Box Debugger/Images_2_100.boxes2D.json
+2021-10-21 17:07:34,777 INFO    Thread-100:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/dec62n9s-media/metadata/boxes2D/Bounding Box Debugger/Images_2_70.boxes2D.json
+2021-10-21 17:07:34,843 INFO    Thread-91 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1ogfd5lh-media/images/Bounding Box Debugger/Images_2_3.png
+2021-10-21 17:07:34,860 INFO    Thread-93 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/qb725urx-media/images/Bounding Box Debugger/Images_2_4.png
+2021-10-21 17:07:34,881 INFO    Thread-87 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2i4khdjn-media/images/Bounding Box Debugger/Images_2_1.png
+2021-10-21 17:07:34,953 INFO    Thread-111:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/18i1o4ah-media/images/Bounding Box Debugger/Images_2_13.png
+2021-10-21 17:07:34,955 INFO    Thread-112:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1bbe1eky-media/metadata/boxes2D/Bounding Box Debugger/Images_2_130.boxes2D.json
+2021-10-21 17:07:34,957 INFO    Thread-110:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3eqz7fvf-media/metadata/boxes2D/Bounding Box Debugger/Images_2_120.boxes2D.json
+2021-10-21 17:07:35,036 INFO    Thread-116:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2ccorlha-media/metadata/boxes2D/Bounding Box Debugger/Images_2_150.boxes2D.json
+2021-10-21 17:07:35,054 INFO    Thread-95 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/19oou8gl-media/images/Bounding Box Debugger/Images_2_5.png
+2021-10-21 17:07:35,061 INFO    Thread-97 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/23fhqul5-media/images/Bounding Box Debugger/Images_2_6.png
+2021-10-21 17:07:35,065 INFO    Thread-105:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2sckmnvs-media/images/Bounding Box Debugger/Images_2_10.png
+2021-10-21 17:07:35,073 INFO    Thread-115:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2cr73au4-media/images/Bounding Box Debugger/Images_2_15.png
+2021-10-21 17:07:35,123 INFO    Thread-99 :13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/15qjhtl9-media/images/Bounding Box Debugger/Images_2_7.png
+2021-10-21 17:07:35,135 INFO    Thread-113:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/i0p6tips-media/images/Bounding Box Debugger/Images_2_14.png
+2021-10-21 17:07:35,155 INFO    Thread-103:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2kuzj2dk-media/images/Bounding Box Debugger/Images_2_9.png
+2021-10-21 17:07:35,178 INFO    Thread-107:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/p1ork2hm-media/images/Bounding Box Debugger/Images_2_11.png
+2021-10-21 17:07:35,180 INFO    Thread-101:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2c1s43qs-media/images/Bounding Box Debugger/Images_2_8.png
+2021-10-21 17:07:35,182 INFO    Thread-109:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2o0ojx9q-media/images/Bounding Box Debugger/Images_2_12.png
+2021-10-21 17:07:37,476 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:40,578 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-21 17:07:40,578 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: stop_status
+2021-10-21 17:07:43,479 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:45,349 DEBUG   SenderThread:13770 [sender.py:send():185] send: stats
+2021-10-21 17:07:45,969 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: log_artifact
+2021-10-21 17:07:45,970 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: log_artifact
+2021-10-21 17:07:47,482 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Validation_3_1.jpg
+2021-10-21 17:07:47,483 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Results_3_1.png
+2021-10-21 17:07:47,484 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Validation_3_5.jpg
+2021-10-21 17:07:47,485 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Results_3_0.png
+2021-10-21 17:07:47,486 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Results_3_4.png
+2021-10-21 17:07:47,487 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Validation_3_2.jpg
+2021-10-21 17:07:47,488 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Results_3_3.png
+2021-10-21 17:07:47,490 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Validation_3_0.jpg
+2021-10-21 17:07:47,491 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Validation_3_4.jpg
+2021-10-21 17:07:47,492 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Results_3_2.png
+2021-10-21 17:07:47,492 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Results_3_5.png
+2021-10-21 17:07:47,493 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_created():217] file/dir created: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Validation_3_3.jpg
+2021-10-21 17:07:47,494 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images
+2021-10-21 17:07:48,307 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-21 17:07:48,507 INFO    Thread-118:13770 [upload_job.py:push():95] Uploaded file /home/igor/.cache/wandb/artifacts/obj/md5/25/097b1e699fc865299d46fa25d34a72
+2021-10-21 17:07:49,471 INFO    SenderThread:13770 [sender.py:send_request_log_artifact():907] logged artifact run_33rruzyc_model - {'id': 'QXJ0aWZhY3Q6MzI2MTAxMjk=', 'digest': 'dac66dbd9d0a04ccdcbf09d1287273ef', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU0NjExMTk=', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MzI2MDk5Njc=', 'versionIndex': 1}}, 'version': 'latest'}
+2021-10-21 17:07:49,491 INFO    Thread-8  :13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:49,681 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:49,681 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Validation_3_0.jpg with policy now
+2021-10-21 17:07:49,682 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:49,682 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Validation_3_1.jpg with policy now
+2021-10-21 17:07:49,684 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:49,684 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Validation_3_2.jpg with policy now
+2021-10-21 17:07:49,692 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:49,692 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Validation_3_3.jpg with policy now
+2021-10-21 17:07:49,697 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:49,697 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Validation_3_4.jpg with policy now
+2021-10-21 17:07:49,699 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:49,699 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Validation_3_5.jpg with policy now
+2021-10-21 17:07:49,704 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:49,704 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Results_3_0.png with policy now
+2021-10-21 17:07:49,710 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:49,712 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Results_3_1.png with policy now
+2021-10-21 17:07:49,719 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:49,720 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Results_3_2.png with policy now
+2021-10-21 17:07:49,724 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:49,724 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Results_3_3.png with policy now
+2021-10-21 17:07:49,730 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:49,730 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Results_3_4.png with policy now
+2021-10-21 17:07:49,734 DEBUG   SenderThread:13770 [sender.py:send():185] send: files
+2021-10-21 17:07:49,735 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file media/images/Results_3_5.png with policy now
+2021-10-21 17:07:49,741 DEBUG   SenderThread:13770 [sender.py:send():185] send: history
+2021-10-21 17:07:49,741 DEBUG   SenderThread:13770 [sender.py:send():185] send: summary
+2021-10-21 17:07:49,742 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-21 17:07:49,742 DEBUG   SenderThread:13770 [sender.py:send():185] send: telemetry
+2021-10-21 17:07:49,742 DEBUG   SenderThread:13770 [sender.py:send():185] send: exit
+2021-10-21 17:07:49,742 INFO    SenderThread:13770 [sender.py:send_exit():294] handling exit code: 0
+2021-10-21 17:07:49,742 INFO    SenderThread:13770 [sender.py:send_exit():296] handling runtime: 92
+2021-10-21 17:07:49,742 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-21 17:07:49,742 INFO    SenderThread:13770 [sender.py:send_exit():306] send defer
+2021-10-21 17:07:49,742 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: poll_exit
+2021-10-21 17:07:49,743 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: defer
+2021-10-21 17:07:49,746 INFO    HandlerThread:13770 [handler.py:handle_request_defer():143] handle defer: 0
+2021-10-21 17:07:49,746 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: defer
+2021-10-21 17:07:49,746 INFO    SenderThread:13770 [sender.py:send_request_defer():315] handle sender defer: 0
+2021-10-21 17:07:49,746 INFO    SenderThread:13770 [sender.py:transition_state():319] send defer: 1
+2021-10-21 17:07:49,747 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: defer
+2021-10-21 17:07:49,747 INFO    HandlerThread:13770 [handler.py:handle_request_defer():143] handle defer: 1
+2021-10-21 17:07:49,814 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: defer
+2021-10-21 17:07:49,814 INFO    SenderThread:13770 [sender.py:send_request_defer():315] handle sender defer: 1
+2021-10-21 17:07:49,814 INFO    SenderThread:13770 [sender.py:transition_state():319] send defer: 2
+2021-10-21 17:07:49,814 DEBUG   SenderThread:13770 [sender.py:send():185] send: stats
+2021-10-21 17:07:49,817 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: defer
+2021-10-21 17:07:49,817 INFO    HandlerThread:13770 [handler.py:handle_request_defer():143] handle defer: 2
+2021-10-21 17:07:49,817 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: defer
+2021-10-21 17:07:49,817 INFO    SenderThread:13770 [sender.py:send_request_defer():315] handle sender defer: 2
+2021-10-21 17:07:49,817 INFO    SenderThread:13770 [sender.py:transition_state():319] send defer: 3
+2021-10-21 17:07:49,817 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: defer
+2021-10-21 17:07:49,817 INFO    HandlerThread:13770 [handler.py:handle_request_defer():143] handle defer: 3
+2021-10-21 17:07:49,819 DEBUG   SenderThread:13770 [sender.py:send():185] send: summary
+2021-10-21 17:07:49,822 INFO    SenderThread:13770 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-21 17:07:49,822 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: defer
+2021-10-21 17:07:49,822 INFO    SenderThread:13770 [sender.py:send_request_defer():315] handle sender defer: 3
+2021-10-21 17:07:49,822 INFO    SenderThread:13770 [sender.py:transition_state():319] send defer: 4
+2021-10-21 17:07:49,822 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: defer
+2021-10-21 17:07:49,822 INFO    HandlerThread:13770 [handler.py:handle_request_defer():143] handle defer: 4
+2021-10-21 17:07:49,823 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: defer
+2021-10-21 17:07:49,823 INFO    SenderThread:13770 [sender.py:send_request_defer():315] handle sender defer: 4
+2021-10-21 17:07:49,844 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-21 17:07:50,044 INFO    SenderThread:13770 [sender.py:transition_state():319] send defer: 5
+2021-10-21 17:07:50,044 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: poll_exit
+2021-10-21 17:07:50,046 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: defer
+2021-10-21 17:07:50,046 INFO    HandlerThread:13770 [handler.py:handle_request_defer():143] handle defer: 5
+2021-10-21 17:07:50,046 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: defer
+2021-10-21 17:07:50,046 INFO    SenderThread:13770 [sender.py:send_request_defer():315] handle sender defer: 5
+2021-10-21 17:07:50,047 INFO    SenderThread:13770 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-21 17:07:50,146 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-21 17:07:50,493 INFO    Thread-119:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/ia2wrnsb-media/images/Validation_3_0.jpg
+2021-10-21 17:07:50,500 INFO    SenderThread:13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/wandb-summary.json
+2021-10-21 17:07:50,500 INFO    SenderThread:13770 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/config.yaml
+2021-10-21 17:07:50,501 INFO    SenderThread:13770 [dir_watcher.py:finish():313] scan: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files
+2021-10-21 17:07:50,501 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/conda-environment.yaml conda-environment.yaml
+2021-10-21 17:07:50,502 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/wandb-summary.json wandb-summary.json
+2021-10-21 17:07:50,514 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/wandb-metadata.json wandb-metadata.json
+2021-10-21 17:07:50,514 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/requirements.txt requirements.txt
+2021-10-21 17:07:50,526 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/config.yaml config.yaml
+2021-10-21 17:07:50,527 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log output.log
+2021-10-21 17:07:50,535 INFO    Thread-127:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2iyvh0o7-media/images/Results_3_2.png
+2021-10-21 17:07:50,552 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Results_3_1.png media/images/Results_3_1.png
+2021-10-21 17:07:50,553 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Labels_0_0.jpg media/images/Labels_0_0.jpg
+2021-10-21 17:07:50,553 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Validation_3_2.jpg media/images/Validation_3_2.jpg
+2021-10-21 17:07:50,553 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Results_3_0.png media/images/Results_3_0.png
+2021-10-21 17:07:50,553 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Validation_3_1.jpg media/images/Validation_3_1.jpg
+2021-10-21 17:07:50,553 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Validation_3_5.jpg media/images/Validation_3_5.jpg
+2021-10-21 17:07:50,553 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Validation_3_4.jpg media/images/Validation_3_4.jpg
+2021-10-21 17:07:50,553 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Mosaics_0_0.jpg media/images/Mosaics_0_0.jpg
+2021-10-21 17:07:50,553 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Results_3_5.png media/images/Results_3_5.png
+2021-10-21 17:07:50,553 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Validation_3_0.jpg media/images/Validation_3_0.jpg
+2021-10-21 17:07:50,554 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Mosaics_0_1.jpg media/images/Mosaics_0_1.jpg
+2021-10-21 17:07:50,554 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Results_3_3.png media/images/Results_3_3.png
+2021-10-21 17:07:50,554 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Mosaics_0_2.jpg media/images/Mosaics_0_2.jpg
+2021-10-21 17:07:50,554 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Results_3_2.png media/images/Results_3_2.png
+2021-10-21 17:07:50,554 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Results_3_4.png media/images/Results_3_4.png
+2021-10-21 17:07:50,554 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Labels_0_1.jpg media/images/Labels_0_1.jpg
+2021-10-21 17:07:50,554 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Validation_3_3.jpg media/images/Validation_3_3.jpg
+2021-10-21 17:07:50,555 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_6.png media/images/Bounding Box Debugger/Images_1_6.png
+2021-10-21 17:07:50,555 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_15.png media/images/Bounding Box Debugger/Images_1_15.png
+2021-10-21 17:07:50,555 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_6.png media/images/Bounding Box Debugger/Images_0_6.png
+2021-10-21 17:07:50,555 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_10.png media/images/Bounding Box Debugger/Images_1_10.png
+2021-10-21 17:07:50,555 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_12.png media/images/Bounding Box Debugger/Images_0_12.png
+2021-10-21 17:07:50,555 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_5.png media/images/Bounding Box Debugger/Images_0_5.png
+2021-10-21 17:07:50,555 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_2.png media/images/Bounding Box Debugger/Images_1_2.png
+2021-10-21 17:07:50,555 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_3.png media/images/Bounding Box Debugger/Images_1_3.png
+2021-10-21 17:07:50,555 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_7.png media/images/Bounding Box Debugger/Images_2_7.png
+2021-10-21 17:07:50,555 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_14.png media/images/Bounding Box Debugger/Images_1_14.png
+2021-10-21 17:07:50,555 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_10.png media/images/Bounding Box Debugger/Images_0_10.png
+2021-10-21 17:07:50,555 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_13.png media/images/Bounding Box Debugger/Images_1_13.png
+2021-10-21 17:07:50,556 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_8.png media/images/Bounding Box Debugger/Images_2_8.png
+2021-10-21 17:07:50,556 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_10.png media/images/Bounding Box Debugger/Images_2_10.png
+2021-10-21 17:07:50,556 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_0.png media/images/Bounding Box Debugger/Images_1_0.png
+2021-10-21 17:07:50,556 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_9.png media/images/Bounding Box Debugger/Images_2_9.png
+2021-10-21 17:07:50,556 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_2.png media/images/Bounding Box Debugger/Images_2_2.png
+2021-10-21 17:07:50,556 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_13.png media/images/Bounding Box Debugger/Images_2_13.png
+2021-10-21 17:07:50,556 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_5.png media/images/Bounding Box Debugger/Images_1_5.png
+2021-10-21 17:07:50,556 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_5.png media/images/Bounding Box Debugger/Images_2_5.png
+2021-10-21 17:07:50,556 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_3.png media/images/Bounding Box Debugger/Images_2_3.png
+2021-10-21 17:07:50,556 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_9.png media/images/Bounding Box Debugger/Images_1_9.png
+2021-10-21 17:07:50,556 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_7.png media/images/Bounding Box Debugger/Images_1_7.png
+2021-10-21 17:07:50,557 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_4.png media/images/Bounding Box Debugger/Images_1_4.png
+2021-10-21 17:07:50,557 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_2.png media/images/Bounding Box Debugger/Images_0_2.png
+2021-10-21 17:07:50,558 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_6.png media/images/Bounding Box Debugger/Images_2_6.png
+2021-10-21 17:07:50,558 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_1.png media/images/Bounding Box Debugger/Images_0_1.png
+2021-10-21 17:07:50,558 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_13.png media/images/Bounding Box Debugger/Images_0_13.png
+2021-10-21 17:07:50,558 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_11.png media/images/Bounding Box Debugger/Images_1_11.png
+2021-10-21 17:07:50,558 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_4.png media/images/Bounding Box Debugger/Images_2_4.png
+2021-10-21 17:07:50,558 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_15.png media/images/Bounding Box Debugger/Images_2_15.png
+2021-10-21 17:07:50,558 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_8.png media/images/Bounding Box Debugger/Images_1_8.png
+2021-10-21 17:07:50,558 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_12.png media/images/Bounding Box Debugger/Images_2_12.png
+2021-10-21 17:07:50,558 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_14.png media/images/Bounding Box Debugger/Images_0_14.png
+2021-10-21 17:07:50,558 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_0.png media/images/Bounding Box Debugger/Images_2_0.png
+2021-10-21 17:07:50,559 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_7.png media/images/Bounding Box Debugger/Images_0_7.png
+2021-10-21 17:07:50,559 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_8.png media/images/Bounding Box Debugger/Images_0_8.png
+2021-10-21 17:07:50,559 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_4.png media/images/Bounding Box Debugger/Images_0_4.png
+2021-10-21 17:07:50,559 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_11.png media/images/Bounding Box Debugger/Images_0_11.png
+2021-10-21 17:07:50,559 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_1.png media/images/Bounding Box Debugger/Images_1_1.png
+2021-10-21 17:07:50,559 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_1_12.png media/images/Bounding Box Debugger/Images_1_12.png
+2021-10-21 17:07:50,559 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_15.png media/images/Bounding Box Debugger/Images_0_15.png
+2021-10-21 17:07:50,559 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_9.png media/images/Bounding Box Debugger/Images_0_9.png
+2021-10-21 17:07:50,559 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_1.png media/images/Bounding Box Debugger/Images_2_1.png
+2021-10-21 17:07:50,559 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_11.png media/images/Bounding Box Debugger/Images_2_11.png
+2021-10-21 17:07:50,559 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_0.png media/images/Bounding Box Debugger/Images_0_0.png
+2021-10-21 17:07:50,559 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_2_14.png media/images/Bounding Box Debugger/Images_2_14.png
+2021-10-21 17:07:50,560 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/images/Bounding Box Debugger/Images_0_3.png media/images/Bounding Box Debugger/Images_0_3.png
+2021-10-21 17:07:50,560 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_10.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_10.boxes2D.json
+2021-10-21 17:07:50,560 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_30.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_30.boxes2D.json
+2021-10-21 17:07:50,560 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_90.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_90.boxes2D.json
+2021-10-21 17:07:50,560 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_100.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_100.boxes2D.json
+2021-10-21 17:07:50,560 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_50.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_50.boxes2D.json
+2021-10-21 17:07:50,560 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_80.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_80.boxes2D.json
+2021-10-21 17:07:50,560 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_150.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_150.boxes2D.json
+2021-10-21 17:07:50,560 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_40.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_40.boxes2D.json
+2021-10-21 17:07:50,561 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_120.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_120.boxes2D.json
+2021-10-21 17:07:50,561 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_00.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_00.boxes2D.json
+2021-10-21 17:07:50,561 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_60.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_60.boxes2D.json
+2021-10-21 17:07:50,561 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_130.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_130.boxes2D.json
+2021-10-21 17:07:50,561 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_20.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_20.boxes2D.json
+2021-10-21 17:07:50,561 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_70.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_70.boxes2D.json
+2021-10-21 17:07:50,561 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_20.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_20.boxes2D.json
+2021-10-21 17:07:50,562 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_70.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_70.boxes2D.json
+2021-10-21 17:07:50,562 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_110.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_110.boxes2D.json
+2021-10-21 17:07:50,562 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_140.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_140.boxes2D.json
+2021-10-21 17:07:50,562 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_100.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_100.boxes2D.json
+2021-10-21 17:07:50,562 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_50.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_50.boxes2D.json
+2021-10-21 17:07:50,562 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_10.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_10.boxes2D.json
+2021-10-21 17:07:50,562 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_30.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_30.boxes2D.json
+2021-10-21 17:07:50,562 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_00.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_00.boxes2D.json
+2021-10-21 17:07:50,562 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_60.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_60.boxes2D.json
+2021-10-21 17:07:50,562 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_100.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_100.boxes2D.json
+2021-10-21 17:07:50,563 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_120.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_120.boxes2D.json
+2021-10-21 17:07:50,563 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_150.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_150.boxes2D.json
+2021-10-21 17:07:50,563 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_130.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_130.boxes2D.json
+2021-10-21 17:07:50,563 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_50.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_50.boxes2D.json
+2021-10-21 17:07:50,563 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_40.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_40.boxes2D.json
+2021-10-21 17:07:50,564 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_150.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_150.boxes2D.json
+2021-10-21 17:07:50,564 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_120.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_120.boxes2D.json
+2021-10-21 17:07:50,564 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_00.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_00.boxes2D.json
+2021-10-21 17:07:50,564 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_40.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_40.boxes2D.json
+2021-10-21 17:07:50,564 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_70.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_70.boxes2D.json
+2021-10-21 17:07:50,565 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_140.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_140.boxes2D.json
+2021-10-21 17:07:50,565 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_20.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_20.boxes2D.json
+2021-10-21 17:07:50,565 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_80.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_80.boxes2D.json
+2021-10-21 17:07:50,565 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_60.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_60.boxes2D.json
+2021-10-21 17:07:50,565 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_80.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_80.boxes2D.json
+2021-10-21 17:07:50,565 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_90.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_90.boxes2D.json
+2021-10-21 17:07:50,565 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_110.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_110.boxes2D.json
+2021-10-21 17:07:50,565 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_110.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_110.boxes2D.json
+2021-10-21 17:07:50,565 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_130.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_130.boxes2D.json
+2021-10-21 17:07:50,565 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_2_140.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_2_140.boxes2D.json
+2021-10-21 17:07:50,565 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_30.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_30.boxes2D.json
+2021-10-21 17:07:50,566 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_10.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_10.boxes2D.json
+2021-10-21 17:07:50,566 INFO    SenderThread:13770 [dir_watcher.py:finish():327] scan save: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_90.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_90.boxes2D.json
+2021-10-21 17:07:50,566 INFO    SenderThread:13770 [sender.py:transition_state():319] send defer: 6
+2021-10-21 17:07:50,566 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: poll_exit
+2021-10-21 17:07:50,566 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: defer
+2021-10-21 17:07:50,567 INFO    HandlerThread:13770 [handler.py:handle_request_defer():143] handle defer: 6
+2021-10-21 17:07:50,567 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: defer
+2021-10-21 17:07:50,567 INFO    SenderThread:13770 [sender.py:send_request_defer():315] handle sender defer: 6
+2021-10-21 17:07:50,567 INFO    SenderThread:13770 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-21 17:07:50,668 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-21 17:07:50,669 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: poll_exit
+2021-10-21 17:07:50,723 INFO    Thread-128:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2nt5h0or-media/images/Results_3_3.png
+2021-10-21 17:07:50,730 INFO    Thread-125:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1bwrnr40-media/images/Results_3_0.png
+2021-10-21 17:07:50,734 INFO    Thread-129:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1pxaaa5b-media/images/Results_3_4.png
+2021-10-21 17:07:50,762 INFO    Thread-126:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/13pia6kl-media/images/Results_3_1.png
+2021-10-21 17:07:50,771 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-21 17:07:50,771 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: poll_exit
+2021-10-21 17:07:50,773 INFO    Thread-121:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/173ox8ap-media/images/Validation_3_2.jpg
+2021-10-21 17:07:50,821 INFO    Thread-120:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/16zbgngo-media/images/Validation_3_1.jpg
+2021-10-21 17:07:50,829 INFO    Thread-122:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/25v40w0c-media/images/Validation_3_3.jpg
+2021-10-21 17:07:50,857 INFO    Thread-123:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/1nhc4jvv-media/images/Validation_3_4.jpg
+2021-10-21 17:07:50,873 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-21 17:07:50,874 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: poll_exit
+2021-10-21 17:07:50,886 INFO    Thread-124:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/3q1p754q-media/images/Validation_3_5.jpg
+2021-10-21 17:07:50,977 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-21 17:07:50,978 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: poll_exit
+2021-10-21 17:07:51,055 INFO    Thread-131:13770 [upload_job.py:push():137] Uploaded file /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/conda-environment.yaml
+2021-10-21 17:07:51,065 INFO    Thread-135:13770 [upload_job.py:push():137] Uploaded file /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/output.log
+2021-10-21 17:07:51,081 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-21 17:07:51,082 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: poll_exit
+2021-10-21 17:07:51,088 INFO    Thread-134:13770 [upload_job.py:push():137] Uploaded file /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/config.yaml
+2021-10-21 17:07:51,102 INFO    Thread-132:13770 [upload_job.py:push():137] Uploaded file /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/wandb-summary.json
+2021-10-21 17:07:51,107 INFO    Thread-133:13770 [upload_job.py:push():137] Uploaded file /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/files/requirements.txt
+2021-10-21 17:07:51,178 INFO    Thread-130:13770 [upload_job.py:push():137] Uploaded file /tmp/tmpvqboof4qwandb/2un57si1-media/images/Results_3_5.png
+2021-10-21 17:07:51,185 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-21 17:07:51,185 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: poll_exit
+2021-10-21 17:07:51,289 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-21 17:07:51,290 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: poll_exit
+2021-10-21 17:07:51,379 INFO    Thread-7  :13770 [sender.py:transition_state():319] send defer: 7
+2021-10-21 17:07:51,380 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: defer
+2021-10-21 17:07:51,381 INFO    HandlerThread:13770 [handler.py:handle_request_defer():143] handle defer: 7
+2021-10-21 17:07:51,381 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: defer
+2021-10-21 17:07:51,381 INFO    SenderThread:13770 [sender.py:send_request_defer():315] handle sender defer: 7
+2021-10-21 17:07:51,393 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-21 17:07:51,699 INFO    SenderThread:13770 [sender.py:transition_state():319] send defer: 8
+2021-10-21 17:07:51,700 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: poll_exit
+2021-10-21 17:07:51,702 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: defer
+2021-10-21 17:07:51,702 INFO    HandlerThread:13770 [handler.py:handle_request_defer():143] handle defer: 8
+2021-10-21 17:07:51,703 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: defer
+2021-10-21 17:07:51,703 INFO    SenderThread:13770 [sender.py:send_request_defer():315] handle sender defer: 8
+2021-10-21 17:07:51,703 INFO    SenderThread:13770 [sender.py:transition_state():319] send defer: 9
+2021-10-21 17:07:51,705 DEBUG   SenderThread:13770 [sender.py:send():185] send: final
+2021-10-21 17:07:51,706 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: defer
+2021-10-21 17:07:51,706 DEBUG   SenderThread:13770 [sender.py:send():185] send: footer
+2021-10-21 17:07:51,707 INFO    HandlerThread:13770 [handler.py:handle_request_defer():143] handle defer: 9
+2021-10-21 17:07:51,707 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: defer
+2021-10-21 17:07:51,708 INFO    SenderThread:13770 [sender.py:send_request_defer():315] handle sender defer: 9
+2021-10-21 17:07:51,803 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-21 17:07:51,804 DEBUG   SenderThread:13770 [sender.py:send_request():199] send_request: poll_exit
+2021-10-21 17:07:51,804 INFO    SenderThread:13770 [file_pusher.py:join():182] waiting for file pusher
+2021-10-21 17:07:51,969 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: get_summary
+2021-10-21 17:07:51,972 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: sampled_history
+2021-10-21 17:07:51,974 DEBUG   HandlerThread:13770 [handler.py:handle_request():126] handle_request: shutdown
+2021-10-21 17:07:51,975 INFO    HandlerThread:13770 [handler.py:finish():683] shutting down handler
+2021-10-21 17:07:52,707 INFO    WriterThread:13770 [datastore.py:close():281] close: /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211021_170614-33rruzyc/run-33rruzyc.wandb
+2021-10-21 17:07:52,968 INFO    SenderThread:13770 [sender.py:finish():986] shutting down sender
+2021-10-21 17:07:52,968 INFO    SenderThread:13770 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-21 17:07:52,968 INFO    SenderThread:13770 [file_pusher.py:join():182] waiting for file pusher
+2021-10-21 17:07:52,970 INFO    MainThread:13770 [internal.py:handle_exit():76] Internal process exited

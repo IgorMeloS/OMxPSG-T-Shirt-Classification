@@ -1,0 +1,41 @@
+{
+    "os": "Linux-5.4.0-89-generic-x86_64-with-debian-buster-sid",
+    "python": "3.7.0",
+    "heartbeatAt": "2021-10-21T15:06:16.475627",
+    "startedAt": "2021-10-21T15:06:14.330403",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 980",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "--img",
+        "640",
+        "--batch",
+        "16",
+        "--epochs",
+        "3",
+        "--data",
+        "data640.yaml",
+        "--project",
+        "../results",
+        "--weights",
+        "yolov5s.pt",
+        "--workers",
+        "1",
+        "--save-period",
+        "1"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ultralytics/yolov5",
+        "commit": "15e8c4c15bff0e3c729868e2c31f80f918e31fb2"
+    },
+    "email": "igorcoroinha@hotmail.com",
+    "root": "/home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5",
+    "host": "igor",
+    "username": "igor",
+    "executable": "/home/igor/anaconda3/envs/torch/bin/python"
+}
