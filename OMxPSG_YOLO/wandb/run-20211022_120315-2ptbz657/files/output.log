@@ -1,0 +1,825 @@
+
+[34m[1mwandb[39m[22m: Downloading large artifact run_14yzm55x_model:v99, 54.18MB. 1 files... Done. 0:0:0
+[34m[1mwandb[39m[22m: Currently logged in as: [33migor_ms[39m (use `wandb login --relogin` to force relogin)
+usage: train.py [-h] [--weights WEIGHTS] [--cfg CFG] [--data DATA] [--hyp HYP]
+                [--epochs EPOCHS] [--batch-size BATCH_SIZE] [--imgsz IMGSZ]
+                [--rect] [--resume [RESUME]] [--nosave] [--noval]
+                [--noautoanchor] [--evolve [EVOLVE]] [--bucket BUCKET]
+                [--cache [CACHE]] [--image-weights] [--device DEVICE]
+                [--multi-scale] [--single-cls] [--adam] [--sync-bn]
+                [--workers WORKERS] [--project PROJECT] [--name NAME]
+                [--exist-ok] [--quad] [--linear-lr]
+                [--label-smoothing LABEL_SMOOTHING] [--patience PATIENCE]
+                [--freeze FREEZE] [--save-period SAVE_PERIOD]
+                [--local_rank LOCAL_RANK] [--entity ENTITY] [--upload_dataset]
+                [--bbox_interval BBOX_INTERVAL]
+                [--artifact_alias ARTIFACT_ALIAS]
+train.py: error: unrecognized arguments: --save_period 1
+[34m[1mwandb[39m[22m: Currently logged in as: [33migor_ms[39m (use `wandb login --relogin` to force relogin)
+[34m[1mtrain: [39m[22mweights=../artifacts/run/last.pt, cfg=, data=data.yaml, hyp=data/hyps/hyp.scratch.yaml, epochs=50, batch_size=16, imgsz=640, rect=False, resume=False, nosave=False, noval=False, noautoanchor=False, evolve=None, bucket=, cache=None, image_weights=False, device=, multi_scale=False, single_cls=False, adam=False, sync_bn=False, workers=1, project=../results, name=exp, exist_ok=False, quad=False, linear_lr=False, label_smoothing=0.0, patience=100, freeze=0, save_period=1, local_rank=-1, entity=None, upload_dataset=False, bbox_interval=-1, artifact_alias=latest
+[34m[1mgithub: [39m[22mup to date with https://github.com/ultralytics/yolov5 ✅
+YOLOv5 🚀 v6.0-25-g15e8c4c torch 1.9.1+cu102 CUDA:0 (NVIDIA GeForce GTX 980, 4040.6875MB)
+[34m[1mhyperparameters: [39m[22mlr0=0.01, lrf=0.1, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.5, cls_pw=1.0, obj=1.0, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0
+[34m[1mTensorBoard: [39m[22mStart with 'tensorboard --logdir ../results', view at http://localhost:6006/
+2021-10-22 12:07:44.879304: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+[34m[1mwandb[39m[22m: wandb version 0.12.5 is available!  To upgrade, please run:
+[34m[1mwandb[39m[22m:  $ pip install wandb --upgrade
+2021-10-22 12:07:46.814213: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+[34m[1mwandb[39m[22m: Tracking run with wandb version 0.12.4
+[34m[1mwandb[39m[22m: Syncing run [33mleafy-durian-16
+[34m[1mwandb[39m[22m: ⭐️ View project at [34m[4mhttps://wandb.ai/igor_ms/results
+[34m[1mwandb[39m[22m: 🚀 View run at [34m[4mhttps://wandb.ai/igor_ms/results/runs/sbma4wd7
+[34m[1mwandb[39m[22m: Run data is saved locally in /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211022_120745-sbma4wd7
+[34m[1mwandb[39m[22m: Run `wandb offline` to turn off syncing.
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  2    115712  models.common.C3                        [128, 128, 2]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1   1182720  models.common.C3                        [512, 512, 1]
+  9                -1  1    656896  models.common.SPPF                      [512, 512, 5]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     18879  models.yolo.Detect                      [2, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model Summary: 270 layers, 7025023 parameters, 7025023 gradients, 15.9 GFLOPs
+Transferred 349/349 items from ../artifacts/run/last.pt
+Scaled weight_decay = 0.0005
+[34m[1moptimizer:[39m[22m SGD with parameter groups 57 weight, 60 weight (no decay), 60 bias
+../artifacts/run/last.pt has been trained for 99 epochs. Fine-tuning for 50 more epochs.
+[34m[1mtrain: [39m[22mScanning '../dataset/train/labels.cache' images and labels... 495 found,
+[34m[1mval: [39m[22mScanning '../dataset/valid/labels.cache' images and labels... 220 found, 0
+Plotting labels...
+[34m[1mautoanchor: [39m[22mAnalyzing anchors... anchors/target = 4.34, Best Possible Recall (BPR) = 1.0000
+Image sizes 640 train, 640 val
+Using 1 dataloader workers
+Logging results to [1m../results/exp3
+Starting training for 149 epochs...
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+   100/148      3.1G   0.02014  0.009598  0.000449        45       640:  68%|▋| ^C
+   100/148      3.1G   0.02014  0.009598  0.000449        45       640:  68%|▋|
+Traceback (most recent call last):
+  File "train.py", line 622, in <module>
+    main(opt)
+  File "train.py", line 519, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "train.py", line 315, in train
+    pred = model(imgs)  # forward
+  File "/home/igor/anaconda3/envs/torch/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/models/yolo.py", line 126, in forward
+    return self._forward_once(x, profile, visualize)  # single-scale inference, train
+  File "/home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/models/yolo.py", line 149, in _forward_once
+    x = m(x)  # run
+  File "/home/igor/anaconda3/envs/torch/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/models/common.py", line 45, in forward
+    return self.act(self.bn(self.conv(x)))
+  File "/home/igor/anaconda3/envs/torch/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/igor/anaconda3/envs/torch/lib/python3.7/site-packages/torch/nn/modules/activation.py", line 395, in forward
+    return F.silu(input, inplace=self.inplace)
+  File "/home/igor/anaconda3/envs/torch/lib/python3.7/site-packages/torch/nn/functional.py", line 1898, in silu
+    return torch._C._nn.silu(input)
+KeyboardInterrupt
+[34m[1mwandb[39m[22m: Currently logged in as: [33migor_ms[39m (use `wandb login --relogin` to force relogin)
+[34m[1mtrain: [39m[22mweights=../artifacts/run/last.pt, cfg=, data=data.yaml, hyp=data/hyps/hyp.scratch.yaml, epochs=51, batch_size=16, imgsz=640, rect=False, resume=False, nosave=False, noval=False, noautoanchor=False, evolve=None, bucket=, cache=None, image_weights=False, device=, multi_scale=False, single_cls=False, adam=False, sync_bn=False, workers=1, project=../results, name=exp, exist_ok=False, quad=False, linear_lr=False, label_smoothing=0.0, patience=100, freeze=0, save_period=1, local_rank=-1, entity=None, upload_dataset=False, bbox_interval=-1, artifact_alias=latest
+[34m[1mgithub: [39m[22mup to date with https://github.com/ultralytics/yolov5 ✅
+YOLOv5 🚀 v6.0-25-g15e8c4c torch 1.9.1+cu102 CUDA:0 (NVIDIA GeForce GTX 980, 4040.6875MB)
+[34m[1mhyperparameters: [39m[22mlr0=0.01, lrf=0.1, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.5, cls_pw=1.0, obj=1.0, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0
+[34m[1mTensorBoard: [39m[22mStart with 'tensorboard --logdir ../results', view at http://localhost:6006/
+2021-10-22 12:09:19.302735: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+[34m[1mwandb[39m[22m: wandb version 0.12.5 is available!  To upgrade, please run:
+[34m[1mwandb[39m[22m:  $ pip install wandb --upgrade
+2021-10-22 12:09:21.334271: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+[34m[1mwandb[39m[22m: Tracking run with wandb version 0.12.4
+[34m[1mwandb[39m[22m: Syncing run [33melectric-smoke-17
+[34m[1mwandb[39m[22m: ⭐️ View project at [34m[4mhttps://wandb.ai/igor_ms/results
+[34m[1mwandb[39m[22m: 🚀 View run at [34m[4mhttps://wandb.ai/igor_ms/results/runs/1u2deaef
+[34m[1mwandb[39m[22m: Run data is saved locally in /home/igor/Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/yolov5/wandb/run-20211022_120920-1u2deaef
+[34m[1mwandb[39m[22m: Run `wandb offline` to turn off syncing.
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  2    115712  models.common.C3                        [128, 128, 2]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1   1182720  models.common.C3                        [512, 512, 1]
+  9                -1  1    656896  models.common.SPPF                      [512, 512, 5]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     18879  models.yolo.Detect                      [2, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model Summary: 270 layers, 7025023 parameters, 7025023 gradients, 15.9 GFLOPs
+Transferred 349/349 items from ../artifacts/run/last.pt
+Scaled weight_decay = 0.0005
+[34m[1moptimizer:[39m[22m SGD with parameter groups 57 weight, 60 weight (no decay), 60 bias
+../artifacts/run/last.pt has been trained for 99 epochs. Fine-tuning for 51 more epochs.
+[34m[1mtrain: [39m[22mScanning '../dataset/train/labels.cache' images and labels... 495 found,
+[34m[1mval: [39m[22mScanning '../dataset/valid/labels.cache' images and labels... 220 found, 0
+Plotting labels...
+[34m[1mautoanchor: [39m[22mAnalyzing anchors... anchors/target = 4.34, Best Possible Recall (BPR) = 1.0000
+Image sizes 640 train, 640 val
+Using 1 dataloader workers
+Logging results to [1m../results/exp3
+Starting training for 150 epochs...
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   100/149      3.1G   0.01991  0.009647 0.0005471        36       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.899        0.9      0.945      0.672
+Saving model artifact on epoch  101
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   101/149        3G   0.02785   0.01024  0.001575        37       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.855      0.909      0.931       0.59
+Saving model artifact on epoch  102
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   102/149     3.23G   0.02821   0.01184  0.002089        37       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.855      0.928      0.932      0.634
+Saving model artifact on epoch  103
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   103/149     3.23G   0.02717   0.01144  0.001774        47       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.872      0.888       0.93      0.592
+Saving model artifact on epoch  104
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   104/149     3.23G   0.02928   0.01147  0.001111        31       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.859      0.914      0.921      0.598
+Saving model artifact on epoch  105
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   105/149     3.23G   0.02743   0.01255  0.001049        53       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.868      0.913      0.923      0.604
+Saving model artifact on epoch  106
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   106/149     3.23G   0.02762   0.01235  0.001141        40       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299        0.9      0.895      0.932       0.64
+Saving model artifact on epoch  107
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   107/149     3.23G   0.02808   0.01147  0.003131        45       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.878      0.915      0.928      0.619
+Saving model artifact on epoch  108
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   108/149     3.23G   0.02768   0.01163  0.001292        50       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.864      0.876       0.91      0.616
+Saving model artifact on epoch  109
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   109/149     3.23G   0.02522   0.01083  0.001279        39       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.891      0.897      0.925      0.598
+Saving model artifact on epoch  110
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   110/149     3.23G   0.02689   0.01144    0.0012        37       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.904      0.901      0.936      0.643
+Saving model artifact on epoch  111
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   111/149     3.23G   0.02565   0.01153  0.001296        42       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.903      0.876      0.926       0.62
+Saving model artifact on epoch  112
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   112/149     3.23G   0.02653   0.01132  0.001174        31       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.895      0.884       0.94      0.638
+Saving model artifact on epoch  113
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   113/149     3.23G   0.02456   0.01099  0.001507        34       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.918        0.9      0.946      0.639
+Saving model artifact on epoch  114
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   114/149     3.23G   0.02647   0.01173  0.001412        42       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.867      0.935       0.93      0.628
+Saving model artifact on epoch  115
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   115/149     3.23G    0.0245   0.01181 0.0008601        39       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.872      0.911       0.93      0.619
+Saving model artifact on epoch  116
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   116/149     3.23G   0.02577   0.01181 0.0009448        56       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.894      0.887      0.935      0.644
+Saving model artifact on epoch  117
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   117/149     3.23G    0.0253   0.01132  0.001298        42       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.897      0.885       0.94      0.654
+Saving model artifact on epoch  118
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   118/149     3.23G   0.02418   0.01121  0.001154        43       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.856      0.927      0.944      0.642
+Saving model artifact on epoch  119
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   119/149     3.23G   0.02492   0.01121 0.0006345        39       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299       0.89      0.887      0.939      0.649
+Saving model artifact on epoch  120
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   120/149     3.23G    0.0243   0.01111  0.001523        39       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.861      0.902      0.927      0.644
+Saving model artifact on epoch  121
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   121/149     3.23G   0.02307    0.0108  0.001219        41       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.853       0.93      0.922      0.639
+Saving model artifact on epoch  122
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   122/149     3.23G   0.02297   0.01037 0.0009544        34       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.836       0.94      0.924      0.646
+Saving model artifact on epoch  123
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   123/149     3.23G   0.02322   0.01088  0.001366        38       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.869      0.912       0.93      0.635
+Saving model artifact on epoch  124
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   124/149     3.23G   0.02232   0.01006  0.001188        38       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.877      0.906       0.93      0.643
+Saving model artifact on epoch  125
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   125/149     3.23G   0.02298   0.01097  0.001064        39       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.894      0.907      0.931      0.648
+Saving model artifact on epoch  126
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   126/149     3.23G   0.02201   0.01102 0.0009143        32       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.876      0.925      0.939      0.662
+Saving model artifact on epoch  127
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   127/149     3.23G   0.02185   0.01025 0.0005539        42       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.909      0.895      0.939      0.667
+Saving model artifact on epoch  128
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   128/149     3.23G   0.02177   0.01033 0.0006302        29       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.886      0.897      0.937      0.671
+Saving model artifact on epoch  129
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   129/149     3.23G   0.02023  0.009881 0.0005656        35       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.883       0.89      0.931      0.668
+Saving model artifact on epoch  130
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   130/149     3.23G   0.02028   0.01009 0.0008797        45       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.888      0.892      0.932      0.661
+Saving model artifact on epoch  131
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   131/149     3.23G   0.02052  0.009073  0.001381        35       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.879      0.903      0.929      0.652
+Saving model artifact on epoch  132
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   132/149     3.23G   0.01979  0.009613 0.0009126        33       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.886      0.901      0.929      0.657
+Saving model artifact on epoch  133
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   133/149     3.23G   0.01928  0.009631 0.0007032        36       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.876      0.906      0.923      0.648
+Saving model artifact on epoch  134
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   134/149     3.23G   0.02013  0.009325  0.000914        40       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.859      0.918      0.923      0.643
+Saving model artifact on epoch  135
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   135/149     3.23G   0.01989   0.01019 0.0004482        34       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.872      0.922      0.934       0.66
+Saving model artifact on epoch  136
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   136/149     3.23G   0.01845  0.008899 0.0003985        42       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.873      0.925      0.938      0.665
+Saving model artifact on epoch  137
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   137/149     3.23G   0.01812  0.009741 0.0004632        34       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299       0.89      0.914      0.939      0.677
+Saving model artifact on epoch  138
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   138/149     3.23G   0.01781  0.009067 0.0003926        47       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.921      0.888      0.939      0.673
+Saving model artifact on epoch  139
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   139/149     3.23G   0.01786  0.008777  0.000471        47       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299       0.93      0.893      0.943      0.679
+Saving model artifact on epoch  140
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   140/149     3.23G    0.0172  0.008463 0.0005097        25       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.925      0.898      0.944       0.68
+Saving model artifact on epoch  141
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   141/149     3.23G   0.01793   0.00948 0.0003391        41       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299       0.92      0.905      0.944       0.68
+Saving model artifact on epoch  142
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   142/149     3.23G   0.01678  0.009282 0.0004993        25       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299       0.93       0.89      0.943      0.681
+Saving model artifact on epoch  143
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   143/149     3.23G   0.01654  0.008802  0.000226        44       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.928      0.885       0.94      0.674
+Saving model artifact on epoch  144
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   144/149     3.23G   0.01697  0.008408 0.0003971        45       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.894      0.918      0.941      0.678
+Saving model artifact on epoch  145
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+   145/149     3.23G   0.01726  0.008202 0.0005908        21       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.944      0.865      0.943      0.683
+Saving model artifact on epoch  146
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   146/149     3.23G   0.01688  0.008999 0.0003629        24       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.934      0.879      0.946      0.683
+Saving model artifact on epoch  147
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   147/149     3.23G   0.01555  0.008135 0.0003676        24       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.931      0.881      0.946      0.677
+Saving model artifact on epoch  148
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   148/149     3.23G   0.01604  0.008782 0.0002221        47       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.933      0.875      0.948      0.679
+Saving model artifact on epoch  149
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+   149/149     3.23G   0.01675  0.008445 0.0006232        43       640: 100%|█|
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.887      0.926       0.95      0.685
+50 epochs completed in 0.281 hours.
+Optimizer stripped from ../results/exp3/weights/last.pt, 14.4MB
+Optimizer stripped from ../results/exp3/weights/best.pt, 14.4MB
+Validating ../results/exp3/weights/best.pt...
+Fusing layers...
+Model Summary: 213 layers, 7015519 parameters, 0 gradients, 15.8 GFLOPs
+               Class     Images     Labels          P          R     mAP@.5 mAP@
+                 all        220        299      0.915        0.9      0.951      0.686
+                  OM        220        134      0.927      0.946      0.974      0.686
+                 PSG        220        165      0.904      0.854      0.929      0.686
+[34m[1mwandb[39m[22m: Waiting for W&B process to finish, PID 8591... (success).
+
+[34m[1mwandb[39m[22m:
+[34m[1mwandb[39m[22m: Run history:
+[34m[1mwandb[39m[22m:        metrics/mAP_0.5 ▇▅▅▅▃▅▄▁▆▄▆▇▅▅▆▇▄▃▃▅▅▆▆▆▅▄▄▃▅▆▆▆▇▇▇▆▇▇▇█
+[34m[1mwandb[39m[22m:   metrics/mAP_0.5:0.95 ▇▁▄▁▂▅▃▃▅▃▅▅▃▅▆▅▅▅▅▄▅▆▇▇▆▆▆▅▆▇▇▇███▇██▇█
+[34m[1mwandb[39m[22m:      metrics/precision ▅▂▂▃▃▅▄▃▅▅▅▆▃▅▅▂▃▂▁▃▅▄▆▄▄▄▄▄▃▃▄▆▇▆▇▇█▇▇▄
+[34m[1mwandb[39m[22m:         metrics/recall ▄▅▇▃▅▄▆▂▄▂▃▄▅▃▃▇▄▇█▅▅▇▄▄▃▅▄▅▆▇▆▃▄▅▃▃▁▂▃▇
+[34m[1mwandb[39m[22m:         train/box_loss ▃██▇████▇▇▇▆▆▇▆▆▆▅▅▅▅▅▄▄▄▄▃▃▃▃▂▂▂▂▂▂▂▂▁▂
+[34m[1mwandb[39m[22m:         train/cls_loss ▂▄▅▅▃▃█▄▃▄▃▄▃▃▄▃▄▃▃▄▃▃▂▂▃▄▃▂▂▁▂▁▂▁▂▁▂▁▁▂
+[34m[1mwandb[39m[22m:         train/obj_loss ▃▄▇▆██▆▇▆▆▆▆▇▇▆▆▆▅▅▅▆▆▄▄▄▂▃▃▄▂▄▂▂▃▃▂▁▂▁▁
+[34m[1mwandb[39m[22m:           val/box_loss ▂▇▄█▄▄▃▄▄▄▅▄▅▃▃▄▃▃▃▂▃▂▂▂▂▂▂▂▂▁▁▂▂▁▁▁▁▁▁▁
+[34m[1mwandb[39m[22m:           val/cls_loss ▂█▅▃▄▅▆▃▄▃▄▃▇▃▇▄▃▄▄▄▃▃▂▂▂▂▅▃▂▂▂▁▁▁▁▁▁▁▁▁
+[34m[1mwandb[39m[22m:           val/obj_loss ▃▃▂▄▃▄▂▃▂▂▁▁▅▂▃▁▃▄▃▄▄▂▃▄▄▄█▆▇▆▅▆▅▅▅▅▅▅▅▅
+[34m[1mwandb[39m[22m:                  x/lr0 ▃█████████▇▇▇▇▇▇▆▆▆▆▅▅▅▅▄▄▄▃▃▃▃▂▂▂▂▂▁▁▁▁
+[34m[1mwandb[39m[22m:                  x/lr1 ▃█████████▇▇▇▇▇▇▆▆▆▆▅▅▅▅▄▄▄▃▃▃▃▂▂▂▂▂▁▁▁▁
+[34m[1mwandb[39m[22m:                  x/lr2 ▃█████████▇▇▇▇▇▇▆▆▆▆▅▅▅▅▄▄▄▃▃▃▃▂▂▂▂▂▁▁▁▁
+[34m[1mwandb[39m[22m:
+[34m[1mwandb[39m[22m: Run summary:
+[34m[1mwandb[39m[22m:        metrics/mAP_0.5 0.95004
+[34m[1mwandb[39m[22m:   metrics/mAP_0.5:0.95 0.68467
+[34m[1mwandb[39m[22m:      metrics/precision 0.88655
+[34m[1mwandb[39m[22m:         metrics/recall 0.9265
+[34m[1mwandb[39m[22m:         train/box_loss 0.01675
+[34m[1mwandb[39m[22m:         train/cls_loss 0.00062
+[34m[1mwandb[39m[22m:         train/obj_loss 0.00845
+[34m[1mwandb[39m[22m:           val/box_loss 0.02045
+[34m[1mwandb[39m[22m:           val/cls_loss 0.00016
+[34m[1mwandb[39m[22m:           val/obj_loss 0.00897
+[34m[1mwandb[39m[22m:                  x/lr0 0.00121
+[34m[1mwandb[39m[22m:                  x/lr1 0.00121
+[34m[1mwandb[39m[22m:                  x/lr2 0.00121
+[34m[1mwandb[39m[22m:
+[34m[1mwandb[39m[22m: Synced 6 W&B file(s), 334 media file(s), 50 artifact file(s) and 0 other file(s)
+[34m[1mwandb[39m[22m: Synced [33melectric-smoke-17[39m: [34mhttps://wandb.ai/igor_ms/results/runs/1u2deaef
+[34m[1mwandb[39m[22m: Find logs at: ./wandb/run-20211022_120920-1u2deaef/logs/debug.log
+[34m[1mwandb[39m[22m:

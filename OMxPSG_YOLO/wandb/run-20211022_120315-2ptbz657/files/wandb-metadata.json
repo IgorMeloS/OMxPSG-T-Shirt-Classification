@@ -1,0 +1,21 @@
+{
+    "os": "Linux-5.4.0-89-generic-x86_64-with-debian-buster-sid",
+    "python": "3.7.0",
+    "heartbeatAt": "2021-10-22T10:03:18.234179",
+    "startedAt": "2021-10-22T10:03:15.328557",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 980",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/home/igor/.local/share/jupyter/runtime/kernel-d1f168e9-e44f-41db-9ce8-b8641bad5f9d.json"
+    ],
+    "state": "running",
+    "program": "Documents/Artificial_Inteligence/Projects/OMXPSG/final_version/OMxPSG_YOLO/training-Copy1.ipynb",
+    "root": "/home/igor",
+    "host": "igor",
+    "username": "igor",
+    "executable": "/home/igor/anaconda3/envs/torch/bin/python"
+}
