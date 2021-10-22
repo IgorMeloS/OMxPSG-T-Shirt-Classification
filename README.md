@@ -1,5 +1,7 @@
 # OM x PSG T-Shirt Detection
 
+<img align="center" src="https://github.com/IgorMeloS/OMxPSG-T-Shirt-Detection/blob/main/Image/output.gif" />
+
 ## Overview
 
 This project intends to build three different approaches for object detection. The objects to be detected are football jerseys (t-shirts) of the two most popular French teams, the Olympique de Marseille and the Paris Saint-Germain.
