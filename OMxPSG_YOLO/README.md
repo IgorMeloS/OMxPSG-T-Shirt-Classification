@@ -13,8 +13,8 @@ $ pip install -r requirements.txt
 The dataset for the object detection come from the original [dataset](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Detection/tree/main/dataset), if you want to train the model by yourself, you must select the images for your training.
 
 This project considers 320 of each team. Example of images for detection task.
-![Image for object detection!](images/OM-484 "OMxPSG")
-![Image for object detection!](images/PSG-1152 "OMxPSG")
+![Image for object detection!](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Detection/blob/main/OMxPSG_YOLO/images/OM-484.jpg "OMxPSG")
+![Image for object detection!](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Detection/blob/main/OMxPSG_YOLO/images/PSG-1152.jpg "OMxPSG")
 
 ## Annotation
 
@@ -24,4 +24,4 @@ The annotations was made with [LabelImg](https://github.com/tzutalin/labelImg). 
 0 0.5078125 0.5765625 0.57421875 0.640625
 ```
 
-Here, we can find two example of annotation files ([1](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Detection/blob/main/OMxPSG_YOLO/images/OM-484.txt) and [2](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Detection/blob/main/OMxPSG_YOLO/images/PSG-1152.txt)).
+Here, we can find two examples of annotation files ([1](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Detection/blob/main/OMxPSG_YOLO/images/OM-484.txt) and [2](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Detection/blob/main/OMxPSG_YOLO/images/PSG-1152.txt)).
