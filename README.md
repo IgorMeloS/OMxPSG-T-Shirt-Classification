@@ -59,3 +59,5 @@ In this project the models was trained using TensorFlow (2.1) and PyTorch (1.9).
 ## Applications
 
 Depending on your problem, object detection can be the first step of your task. For example, to count the number of vehicles on the road, we first need a model to detect cars and then, a model to track the detected objects and count them. I'm looking for a good video, with a static camera to develop some applications, as count the number of detection, measure speed and distance.I hope to submit it as soon as possible.
+
+**Feel free to make critics and suggestion**
