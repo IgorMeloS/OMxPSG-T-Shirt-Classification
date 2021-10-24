@@ -21,7 +21,7 @@ As said before, this project contains three different approaches. The folders to
 
 **A more detailed explanation about each method and the metrics results can be found inside each above folder.**
 
-![OM x PSG T-Shirt Recognition!](Image/om-psg-classico.jpg "OM x PSG")
+![OM x PSG T-Shirt Recognition!](Image/om-psg.jpg "OM x PSG")
 
 ## Motivation
 
