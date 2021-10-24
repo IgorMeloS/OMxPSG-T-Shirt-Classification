@@ -4,20 +4,20 @@
 
 ## Overview
 
-This project intends to build three different approaches to detect football jerseys (t-shirts) of the two most popular French teams, the Olympique de Marseille and the Paris Saint-Germain.
+This project intends to build three different approaches to detect football (soccer) t-shirts of the two most popular French teams, the Olympique de Marseille and the Paris Saint-Germain.
 
 
-**About the project**: The idea behind this project started with my training on Computer Vision (CV). In the beginning of my Artificial Intelligence journey, I wanted deploy a model of Convolutional Neural Network (CNN) to predict images from the both French teams. But, in this moment, I didn't have enough knowledge about CV. I’ve postulated for a job, to work with CV and, I presented this idea as personal project. The experience was a little bite different I had imagined. When I was asked about image preprocessing, about labeling and especially if, my model was capable to detect object with video stream, I didn’t have the good answers.
+**About the project**: The main objective of this project is to deploy a model to detect t-shirts from the both teams in real time (applications as tracking or detection count will be subjects of other projects). The idea behind this project started with my training on Computer Vision (CV). In the beginning of my Artificial Intelligence journey, I wanted deploy a model of Convolutional Neural Network (CNN) to predict images from the both French teams. But, in this moment, I didn't have enough knowledge about CV. I’ve postulated for a job, to work with CV and, I presented this idea as personal project. The experience was a little bite different I had imagined. When I was asked about image preprocessing, about labeling and especially if, my model was capable to detect object with video stream, I didn’t have the good answers.
 
 After this experience, I decided to go into a deep formation on CV and fill the empty blanks. During this process, I've studied many aspects about image preprocessing, CNN architectures (for classification and detection tasks) and OpenCV skills. The results presented here is a part of my studies and a nice little reward.
 
-As said before, this project contains three different approaches, each of them corresponds to a stage of my training on CV. The folders to each approach are organized as:
+As said before, this project contains three different approaches. The folders to each approach are organized as:
 
 - [OM x PSG T-Shirt detection with composed model.](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Detection/tree/main/OMxPSG_composed_model).
-  - The first approach is composed by two step. The first step is the t-shirts detection using the Viola-Jones algorithm. Once we have the t-shirt detection, we extract the ROI (region of interest), inside the ROI and then, we classify the image. The classification model was trained with transfer learning on 1200 images, 600 for each team.
+  - The first approach is composed by two step. The first step is the t-shirts detection using the Viola-Jones algorithm. Once we have the t-shirt detection, we extract the ROI (region of interest) and then, we classify the image. The classification model was trained with transfer learning on 1200 images, 600 for each team, using VGG16 and weights from ImageNet. The final result was HORRIBLE!
 - [OM x PSG T-Shirt detection with SSD - editing]()
 - [OM x PSG T-Shirt detection with YOLOv5.](https://github.com/IgorMeloS/OMxPSG-T-Shirt-Detection/tree/main/OMxPSG_YOLO)
-  - Considering the YOLOv5 from the Ultralytics, we train the model on 640 images, 320 for each class, totaling 920 image instances.
+  - Considering the YOLOv5 from the Ultralytics, we train the model on 640 images, 320 for each class, totaling 920 instances for the training. The final results give us a mAP_0.5 = 0.94 and mAP_0.5:0.95 = 0.64.
 
 **A more detailed explanation about each method and the metrics results can be found inside each above folder.**
 
@@ -33,7 +33,7 @@ In France, it couldn’t be different, the rivalry is present in the hexagon. Th
 
 The PSG, on the other hand, is the richest French team. The club wants to enter the hall of great teams of Europe. Always presenting good performances at international level, the PSG did never reach your main goal, become a European champion. Every year, the PSG is faced to the international failure. Regardless of your constant European failure, the club of the capital dominates the football at national level. The PSG became the second most popular French club, due to a considerable number of star players, a strong advertising campaign, and evidently, a good football.
 
-Motivated by this French rivalry, OM x PSG, I want to bring it into the world of computer vision.
+Motivated by this French rivalry, OM x PSG, I want to bring it into the world of computer vision and, be able to detect t-shirt of OM and PSG in real time.
 
 ## Dataset
 
@@ -58,4 +58,4 @@ In this project the models was trained using TensorFlow (2.1) and PyTorch (1.9).
 
 ## Applications
 
-Depending on your problem, object detection can be the first step of your task. For example, to count the number of vehicles on a road, we first need a model to detect cars and then, a model to track the detected objects and count them. I'm looking for a good video, with a static camera to develop some applications, as count the number of detection or measure the speed. I hope to submit it as soon as possible.
+Depending on your problem, object detection can be the first step of your task. For example, to count the number of vehicles on the road, we first need a model to detect cars and then, a model to track the detected objects and count them. I'm looking for a good video, with a static camera to develop some applications, as count the number of detection, measure speed and distance.I hope to submit it as soon as possible.

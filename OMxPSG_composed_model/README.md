@@ -20,8 +20,8 @@ Testing the Haar cascade with Viola-Jones algorithm
 
 ## Step 3
 Training the classification model with fine tuning. The backbone was VGG16 with the weights from ImageNet
-##`OMxPSG_CNN_class.ipynb`
+## `OMxPSG_CNN_class.ipynb`
 
 ## Step 4
 Build a the t-shirt detector merging Viola-Jones algorithm and the classification
-##`OMxPSG_tshirt_detect.ipynb`
+## `OMxPSG_tshirt_detect.ipynb`

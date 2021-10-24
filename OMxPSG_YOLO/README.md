@@ -1,5 +1,14 @@
 # OM x PSG T-Shirt Detection with YOLOv5
 
+## Training the model
+## `training.ipynb`
+
+## Testing the model
+## `training.ipynb`
+
+## Testing with webcam
+## `test_webcam.ipynb`
+
 ## Installing yolov5
 
 ```bash
